@@ -36,10 +36,11 @@ body {
 }
 
 .logo {
-    width: 680px;
+    width: 650px;
     height: auto;
     display: block;
-    transform: translateY(-10px);
+    margin-top: 22px;
+    transform: none;
 }
 
 .lang-buttons {
