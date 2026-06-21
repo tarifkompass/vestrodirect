@@ -1,111 +1,116 @@
-:root {
-  --gold: #d8a84f;
-  --gold-light: #f4d27a;
-  --text-light: #ffffff;
-}
-
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  min-height: 100%;
   font-family: Arial, Helvetica, sans-serif;
+  background: #071b3d;
 }
 
 .hero {
   min-height: 100vh;
-
+  color: #ffffff;
   background-image:
     linear-gradient(
-      rgba(0,0,0,0.15),
-      rgba(0,0,0,0.15)
+      90deg,
+      rgba(5, 18, 45, 0.45) 0%,
+      rgba(5, 18, 45, 0.25) 38%,
+      rgba(5, 18, 45, 0.05) 100%
     ),
     url("../images/vestro_hero_luxury_navy_gold.webp");
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  color: white;
 }
 
 .topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  padding: 30px 60px;
+  padding: 28px 56px;
 }
 
 .logo {
-    width: 300px;
-    height: auto;
-    display: block;
-}
-.language-switch {
-  color: white;
-  font-weight: 600;
+  width: 300px;
+  height: auto;
+  display: block;
 }
 
-.hero-content {
-  max-width: 700px;
-
-  padding:
-    120px 60px
-    80px;
+.lang-buttons {
+  display: flex;
+  gap: 14px;
+  align-items: center;
 }
 
-.hero-content h1 {
-  font-size: 64px;
-  line-height: 1.1;
-  margin-bottom: 25px;
-}
-
-.hero-content p {
-  font-size: 22px;
-  line-height: 1.6;
-  margin-bottom: 40px;
-}
-
-.boost-btn {
-  background: linear-gradient(
-    135deg,
-    #f4d27a,
-    #d8a84f
-  );
-
-  border: none;
-
-  padding:
-    18px 42px;
-
-  border-radius: 12px;
-
-  font-size: 18px;
-  font-weight: 700;
-
+.lang-btn {
+  width: 82px;
+  height: auto;
+  display: block;
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+.hero-content {
+  max-width: 680px;
+  padding: 120px 0 0 70px;
+}
 
+.hero-content h1 {
+  font-size: 68px;
+  line-height: 1.08;
+  font-weight: 800;
+  margin-bottom: 28px;
+  text-shadow: 0 3px 14px rgba(0,0,0,0.25);
+}
+
+.hero-content p {
+  max-width: 560px;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 42px;
+  color: rgba(255,255,255,0.94);
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 18px 50px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #f7d77c, #d8a84f);
+  color: #081a3d;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 1px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+.main-btn:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
   .topbar {
     padding: 20px;
   }
 
   .logo {
-    height: 45px;
+    width: 220px;
+  }
+
+  .lang-btn {
+    width: 58px;
   }
 
   .hero-content {
-    padding: 80px 20px;
+    padding: 90px 24px 0 24px;
   }
 
   .hero-content h1 {
-    font-size: 40px;
+    font-size: 42px;
   }
 
   .hero-content p {
