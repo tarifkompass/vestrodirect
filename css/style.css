@@ -31,12 +31,12 @@ body {
 .topbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 28px 56px;
+  align-items: flex-start;
+  padding: 55px 70px;
 }
 
 .logo {
-  width: 300px;
+  width: 360px;
   height: auto;
   display: block;
 }
@@ -48,7 +48,7 @@ body {
 }
 
 .lang-btn {
-  width: 82px;
+  width: 120px;
   height: auto;
   display: block;
   cursor: pointer;
