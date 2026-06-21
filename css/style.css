@@ -1,0 +1,23 @@
+:root {
+  --navy: #0b2454;
+  --navy-dark: #061733;
+  --gold: #d8a84f;
+  --gold-light: #f4d27a;
+  --text-light: #ffffff;
+  --text-muted: #d8dfef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--navy-dark);
+  color: var(--text-light);
+}
