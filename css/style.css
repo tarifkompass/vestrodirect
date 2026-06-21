@@ -1,23 +1,113 @@
 :root {
-  --navy: #0b2454;
-  --navy-dark: #061733;
   --gold: #d8a84f;
   --gold-light: #f4d27a;
   --text-light: #ffffff;
-  --text-muted: #d8dfef;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
+html,
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--navy-dark);
-  color: var(--text-light);
+}
+
+.hero {
+  min-height: 100vh;
+
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.15),
+      rgba(0,0,0,0.15)
+    ),
+    url("../images/vestro_hero_luxury_navy_gold.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: white;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 30px 60px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.language-switch {
+  color: white;
+  font-weight: 600;
+}
+
+.hero-content {
+  max-width: 700px;
+
+  padding:
+    120px 60px
+    80px;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.hero-content p {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.boost-btn {
+  background: linear-gradient(
+    135deg,
+    #f4d27a,
+    #d8a84f
+  );
+
+  border: none;
+
+  padding:
+    18px 42px;
+
+  border-radius: 12px;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .topbar {
+    padding: 20px;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  .hero-content {
+    padding: 80px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
 }
