@@ -32,27 +32,32 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 32px 55px 55px 35px;
+    padding: 18px 42px 55px 18px;
 }
 
 .logo {
-    width: 580px;
+    width: 620px;
     height: auto;
     display: block;
+    transform: translate(-18px, -12px);
 }
 
 .lang-buttons {
     display: flex;
-    gap: 4px;
+    gap: 0;
     align-items: center;
-    padding-top: 8px;
+    padding-top: 4px;
 }
 
 .lang-btn {
-    width: 155px;
+    width: 135px;
     height: auto;
     display: block;
     cursor: pointer;
+}
+
+.lang-btn + .lang-btn {
+    margin-left: -12px;
 }
 
 .hero-content {
