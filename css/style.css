@@ -36,19 +36,19 @@ body {
 }
 
 .logo {
-  width: 360px;
+  width: 500px;
   height: auto;
   display: block;
 }
 
 .lang-buttons {
   display: flex;
-  gap: 14px;
+  gap: 10px;
   align-items: center;
 }
 
 .lang-btn {
-  width: 120px;
+  width: 200px;
   height: auto;
   display: block;
   cursor: pointer;
