@@ -41,9 +41,10 @@ body {
 }
 
 .logo {
-  height: 60px;
+    width: 300px;
+    height: auto;
+    display: block;
 }
-
 .language-switch {
   color: white;
   font-weight: 600;
