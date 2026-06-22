@@ -122,4 +122,57 @@ body {
   .hero-content p {
     font-size: 18px;
   }
+  .footer {
+  width: 100%;
+  padding: 40px 20px 30px;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 46px;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #d4af37;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.footer-link img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.footer-link:hover {
+  color: #f3d675;
+}
+
+.footer-link:hover img {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .footer-links {
+    gap: 26px;
+  }
+
+  .footer-link img {
+    width: 46px;
+    height: 46px;
+  }
+
+  .footer-link {
+    font-size: 13px;
+  }
 }
