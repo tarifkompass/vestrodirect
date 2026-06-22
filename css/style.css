@@ -9,7 +9,18 @@ body {
   width: 100%;
   min-height: 100%;
   font-family: Arial, Helvetica, sans-serif;
-background: #071b3d;
+background:
+    linear-gradient(
+        90deg,
+        rgba(5, 18, 45, 0.45) 0%,
+        rgba(5, 18, 45, 0.25) 38%,
+        rgba(5, 18, 45, 0.05) 100%
+    ),
+    url("../images/vestro_hero_luxury_navy_gold.webp");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 }
 
 .hero {
@@ -23,9 +34,7 @@ background: #071b3d;
       rgba(5, 18, 45, 0.05) 100%
     ),
     url("../images/vestro_hero_luxury_navy_gold.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+background: transparent;
 }
 
 .topbar {
@@ -154,16 +163,14 @@ background: #071b3d;
     display: block;
     margin: 0 0 18px;
 }
-
 .footer-link span {
     color: #d4af37;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 400;
     line-height: 1.1;
     text-decoration: none;
 }
-
 .footer-link::after {
     content: "";
     width: 72px;
@@ -171,7 +178,4 @@ background: #071b3d;
     margin-top: 18px;
     background: #d4af37;
     border-radius: 999px;
-}
-.footer {
-    background: transparent;
 }
