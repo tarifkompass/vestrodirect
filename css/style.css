@@ -143,12 +143,12 @@ background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 160px;
+    gap: 120px;
     flex-wrap: wrap;
 }
 
 .footer-link {
-    width: 180px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,3 +179,12 @@ background: transparent;
     background: #d4af37;
     border-radius: 999px;
 }
+.footer-link {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-link:hover {
+    transform: translateY(-4px);
+    opacity: 0.85;
+}
+<p class="footer-copy">© 2026 VestroDirect</p>
