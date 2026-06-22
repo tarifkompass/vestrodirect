@@ -13,7 +13,7 @@ background: #071b3d;
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: auto;
   color: #ffffff;
   background-image:
     linear-gradient(
@@ -61,8 +61,8 @@ background: #071b3d;
     margin-left: -18px;
 }
 .hero-content {
-  max-width: 680px;
-  padding: 120px 0 0 70px;
+    max-width: 680px;
+    padding: 70px 0 70px;
 }
 
 .hero-content h1 {
