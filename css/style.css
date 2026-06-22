@@ -122,7 +122,9 @@ body {
   .hero-content p {
     font-size: 18px;
   }
- .footer {
+}
+
+.footer {
     width: 100%;
     padding: 18px 20px 24px;
     background: transparent;
@@ -159,5 +161,4 @@ body {
     font-weight: 600;
     line-height: 1.2;
     text-decoration: none;
-}
 }
