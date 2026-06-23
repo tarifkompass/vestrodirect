@@ -191,13 +191,13 @@ a {
     display: grid;
 
     grid-template-columns:
-        minmax(520px, 720px)
-        minmax(380px, 570px);
+    minmax(500px, 650px)
+    minmax(420px, 620px);
 
     justify-content: space-between;
     align-items: start;
 
-    gap: 70px;
+    gap: 40px;
 }
 
 
@@ -305,8 +305,8 @@ a {
 }
 
 .topic-item img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: block;
 }
 
