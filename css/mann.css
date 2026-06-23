@@ -283,33 +283,31 @@ a {
 
 
 .hero-topics {
-    margin-top: 18px;
+    margin-top: 22px;
     margin-bottom: 34px;
 
     display: flex;
     flex-direction: column;
-    gap: 10px;
-
-    color: rgba(255, 255, 255, 0.9);
-
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 1.5;
+    gap: 12px;
 }
 
-.v-icon {
-    display: inline-block;
-
-    width: 20px;
+.topic-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 
     color: var(--gold-light);
 
     font-size: 20px;
-    font-weight: 800;
-
-    margin-right: 10px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
 }
 
+.topic-item img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
 
 .boost-button {
     width: clamp(235px, 18vw, 290px);
