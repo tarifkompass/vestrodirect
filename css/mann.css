@@ -182,7 +182,7 @@ a {
     width: 100%;
     max-width: 1180px;
     margin: 0;
-    padding: 35px 40px 60px;
+   padding: 0 40px 60px;
     padding-left: 170px;
     display: flex !important;
     align-items: flex-start;
@@ -199,8 +199,8 @@ a {
     }
 .hero-visual {
     position: absolute;
-    right: 40px;
-top: 120px;
+    right: -40px;
+top: 60px;
 width: 520px;
     display: flex;
     justify-content: flex-end;
@@ -266,12 +266,12 @@ width: 520px;
 
 
 .hero-topics {
-    margin-top: 22px;
-    margin-bottom: 26px;
+    margin-top: 12px;
+    margin-bottom: 14px;
 
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 8px;
 }
 .symptoms-intro {
     margin-top: 18px;
@@ -286,7 +286,7 @@ font-style: italic;
 }
 
 .hero-message {
-    margin-top: 28px;
+    margin-top: 16px;
 
     max-width: 900px;
 }
@@ -315,7 +315,7 @@ font-style: italic;
 .topic-item {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
 
     color: var(--gold-light);
 
