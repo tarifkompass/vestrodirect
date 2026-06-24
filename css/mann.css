@@ -303,12 +303,30 @@ a {
     line-height: 1.5;
 }
 
-.hero-followup {
-    margin-top: 24px;
+.hero-message {
+    margin-top: 28px;
 
-    color: rgba(255, 255, 255, 0.85);
+    max-width: 900px;
+}
 
-    font-size: 17px;
+.hero-message strong {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: var(--gold-light);
+
+    font-size: 26px;
+
+    font-weight: 700;
+}
+
+.hero-message p {
+    margin: 0;
+
+    color: rgba(255,255,255,0.88);
+
+    font-size: 19px;
 
     line-height: 1.8;
 }
