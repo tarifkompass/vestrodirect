@@ -183,21 +183,22 @@ a {
     max-width: 1180px;
     margin: 0 auto;
     padding: 80px 40px 80px;
-    display: grid !important;
-    grid-template-columns: 620px 420px !important;
-    align-items: start;
+    display: flex !important;
+    align-items: flex-start;
     justify-content: center;
     gap: 70px;
 }
 .hero-content {
-    width: 100%;
-    max-width: 650px;
+    width: 620px;
+    max-width: 620px;
     margin: 0;
     padding: 0;
+    flex-shrink: 0;
 }
 
 .hero-visual {
-    width: 100%;
+    width: 420px;
+    flex-shrink: 0;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
