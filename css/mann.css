@@ -199,9 +199,9 @@ a {
     }
 .hero-visual {
     position: absolute;
-    right: -120px;
-top: 20px;
-width: 620px;
+    right: -220px;
+    top: -20px;
+    width: 760px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
