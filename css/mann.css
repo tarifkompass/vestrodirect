@@ -187,6 +187,7 @@ a {
     align-items: flex-start;
     justify-content: center;
     gap: 70px;
+    position: relative;
 }
 .hero-content {
     width: 620px;
@@ -195,15 +196,15 @@ a {
     padding: 0;
     flex-shrink: 0;
 }
-
 .hero-visual {
+    position: absolute;
+    right: 40px;
+    top: 170px;
     width: 420px;
-    flex-shrink: 0;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
 }
-
 .hero-visual img {
     width: 100%;
     max-width: 360px;
