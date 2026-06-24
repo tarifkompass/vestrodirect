@@ -200,7 +200,7 @@ a {
 .hero-visual {
     position: absolute;
     right: -380px;
-    top: -60px;
+    top: -80px;
     width: 600px;
     display: flex;
     justify-content: flex-end;
