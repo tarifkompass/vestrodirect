@@ -190,14 +190,25 @@ a {
 
     display: grid;
 
-    grid-template-columns: 1fr;
+    grid-template-columns: 1.1fr 0.9fr;
 
     justify-content: space-between;
     align-items: start;
 
     gap: 40px;
 }
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 
+.hero-man {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    display: block;
+}
 
 .hero-content {
     width: 100%;
