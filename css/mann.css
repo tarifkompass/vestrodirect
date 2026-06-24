@@ -192,14 +192,15 @@ a {
 .hero-content {
     width: 620px;
     max-width: 620px;
-    margin-left: 120px;
+    margin: 0;
     padding: 0;
     flex-shrink: 0;
+    transform: translateX(-180px);
 }
 .hero-visual {
     position: absolute;
-    right: 40px;
-    top: 170px;
+    right: 120px;
+    top: 230px;
     width: 420px;
     display: flex;
     justify-content: flex-end;
