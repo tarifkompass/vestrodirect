@@ -183,9 +183,10 @@ a {
     max-width: 1180px;
     margin: 0;
     padding: 80px 40px 80px;
+    padding-left: 170px;
     display: flex !important;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 70px;
     position: relative;
 }
@@ -195,8 +196,7 @@ a {
     margin: 0;
     padding: 0;
     flex-shrink: 0;
-    transform: translateX(-180px);
-}
+    }
 .hero-visual {
     position: absolute;
     right: 120px;
