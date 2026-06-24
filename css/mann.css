@@ -185,13 +185,13 @@ a {
 
     padding:
         46px
-        70px
+        20px
         100px;
 
     display: grid;
 
     grid-template-columns:
-    minmax(500px, 650px)
+    minmax(480px, 620px)
     minmax(420px, 620px);
 
     justify-content: space-between;
@@ -207,6 +207,8 @@ a {
     margin: 0;
 
     padding: 0;
+
+    transform: translateX(-80px);
 }
 
 
@@ -255,7 +257,7 @@ a {
     margin-bottom: 28px;
 
     font-size:
-        clamp(52px, 6vw, 82px);
+        clamp(48px, 5.4vw, 74px);
 
     line-height: 1.04;
 
@@ -291,7 +293,27 @@ a {
     flex-direction: column;
     gap: 12px;
 }
+.symptoms-intro {
+    margin-top: 18px;
+    margin-bottom: 16px;
 
+    color: var(--gold-light);
+
+    font-size: 18px;
+    font-weight: 600;
+
+    line-height: 1.5;
+}
+
+.hero-followup {
+    margin-top: 24px;
+
+    color: rgba(255, 255, 255, 0.85);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
 .topic-item {
     display: flex;
     align-items: center;
