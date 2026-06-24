@@ -199,16 +199,16 @@ a {
     }
 .hero-visual {
     position: absolute;
-    right: -280px;
-    top: -40px;
-    width: 860px;
+    right: -300px;
+    top: -50px;
+    width: 700px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
 }
 .hero-visual img {
     width: 100%;
-    max-width: 680px;
+    max-width: 600px;
     height: auto;
     display: block;
     object-fit: contain;
