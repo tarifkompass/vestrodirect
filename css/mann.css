@@ -180,67 +180,40 @@ a {
 
 .hero-main {
     width: min(100%, 1580px);
-
     margin: 0 auto;
-
     padding:
         10px
         20px
         80px;
-
     display: grid;
-
     grid-template-columns: 1.1fr 0.9fr;
-
     justify-content: space-between;
     align-items: start;
-
     gap: 40px;
-}
-.hero-visual {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.hero-man {
-    width: 100%;
-    max-width: 520px;
-    height: auto;
-    display: block;
 }
 
 .hero-content {
     width: 100%;
-
     margin: 0;
-
     padding: 0;
-
-    
+   
 }
-
 
 .hero-visual {
     width: 100%;
-
     display: flex;
-
     justify-content: flex-end;
     align-items: flex-start;
 }
 
 .hero-visual img {
-    width: min(100%, 540px);
+    width: 100%;
+    max-width: 420px;
     height: auto;
-
     display: block;
-
     object-fit: contain;
     transform: translateY(-90px);
 }
-
-
 .hero-kicker {
     display: block;
 
