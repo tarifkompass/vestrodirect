@@ -181,22 +181,17 @@ a {
 .hero-main {
     width: min(100%, 1580px);
     margin: 0 auto;
-    padding:
-        10px
-        20px
-        80px;
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    justify-content: space-between;
+    padding: 10px 20px 80px;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr) !important;
     align-items: start;
     gap: 40px;
 }
-
 .hero-content {
     width: 100%;
+    max-width: 650px;
     margin: 0;
     padding: 0;
-   
 }
 
 .hero-visual {
@@ -1202,32 +1197,11 @@ font-style: italic;
     .step-card {
         min-height: 250px;
     }
-.hero-main {
-    padding:
-        58px
-        22px
-        82px;
-
-    grid-template-columns: 1fr;
-
-    gap: 38px;
-}
 
 
 .hero-content {
     text-align: center;
 }
-
-
-.hero-visual {
-    justify-content: center;
-}
-
-
-.hero-visual img {
-    width: min(100%, 300px);
-}
-
 
 .boost-button {
     width: 250px;
