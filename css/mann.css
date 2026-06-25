@@ -1394,60 +1394,123 @@ margin: 0 auto;
 }
 }
 
-<!-- =========================
-     FOOTER
-========================= -->
+/* =========================
+   FOOTER
+========================= */
 
-<footer class="site-footer">
+.site-footer{
+    width:100%;
+    padding:70px 20px 40px;
+    background:#071D3A;
+}
 
-    <div class="content-container">
+.site-footer .content-container{
+    max-width:1180px;
+    margin:0 auto;
+}
 
-        <div class="footer-links">
+.footer-links{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:120px;
+    flex-wrap:wrap;
+}
 
-            <a href="impressum.html" class="footer-link">
-                <img src="images/icons/impressum-icon.svg" alt="Impressum">
+.footer-link{
+    width:150px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    text-decoration:none;
+    transition:transform .25s ease, opacity .25s ease;
+}
 
-                <span
-                    data-de="Impressum"
-                    data-en="Legal Notice">
-                    Impressum
-                </span>
-            </a>
+.footer-link img{
+    width:80px;
+    height:80px;
+    object-fit:contain;
+    display:block;
+    margin:0 0 18px;
+}
 
-            <a href="datenschutz.html" class="footer-link">
-                <img src="images/icons/privacy-icon.svg" alt="Datenschutz">
+.footer-link span{
+    color:#D4AF37;
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:30px;
+    font-weight:400;
+    line-height:1.1;
+    text-decoration:none;
+}
 
-                <span
-                    data-de="Datenschutz"
-                    data-en="Privacy Policy">
-                    Datenschutz
-                </span>
-            </a>
+.footer-link::after{
+    content:"";
+    width:86px;
+    height:3px;
+    margin-top:18px;
+    background:#D4AF37;
+    border-radius:999px;
+}
 
-            <a href="affiliate.html" class="footer-link">
-                <img src="images/icons/affiliate-icon.svg" alt="Affiliate Disclosure">
+.footer-link:hover{
+    transform:translateY(-4px);
+    opacity:.88;
+}
 
-                <span
-                    data-de="Partnerhinweis"
-                    data-en="Affiliate Disclosure">
-                    Partnerhinweis
-                </span>
-            </a>
+.footer-copy{
+    width:100%;
+    margin:34px 0 0;
+    text-align:center;
+    color:rgba(255,255,255,.55);
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:400;
+    line-height:1.6;
+}
 
-        </div>
+.footer-copy p{
+    margin:0;
+}
 
-        <div class="footer-copy">
+.footer-copy p + p{
+    margin-top:6px;
+}
 
-            <p>© 2026 VestroDirect</p>
+/* MOBILE */
 
-            <p
-                data-de="Informationsplattform für lizenzierte digitale Gesundheitslösungen in Deutschland."
-                data-en="Information platform for licensed digital healthcare solutions in Germany.">
-                Informationsplattform für lizenzierte digitale Gesundheitslösungen in Deutschland.
-            </p>
+@media (max-width:768px){
 
-        </div>
+    .site-footer{
+        padding:56px 20px 34px;
+    }
 
-    </div>
+    .footer-links{
+        gap:42px;
+    }
 
-</footer>
+    .footer-link{
+        width:130px;
+    }
+
+    .footer-link img{
+        width:68px;
+        height:68px;
+        margin-bottom:14px;
+    }
+
+    .footer-link span{
+        font-size:24px;
+    }
+
+    .footer-link::after{
+        width:66px;
+        margin-top:14px;
+    }
+
+    .footer-copy{
+        margin-top:30px;
+        font-size:13px;
+    }
+
+}
