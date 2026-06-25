@@ -493,7 +493,13 @@ margin: 0 auto;
     font-size:
         clamp(35px, 4vw, 52px);
 }
+.section-heading {
+    text-align: center;
+}
 
+.section-heading .section-kicker {
+    text-align: center;
+}
 
 .heading-description {
     max-width: 760px;
