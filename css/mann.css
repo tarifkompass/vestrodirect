@@ -465,6 +465,8 @@ font-style: italic;
 }
 
 .medical-about-text {
+    max-width: 920px;
+margin: 0 auto;
 ...
 }
 
