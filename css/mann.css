@@ -526,18 +526,32 @@ margin: 0 auto;
 }
 
 .vestro-help-heading {
-    margin-bottom: 48px;
+    max-width: 1180px;
+    margin: 0 auto 48px;
+    text-align: center;
 }
+
 .vestro-help-heading .section-kicker {
-    max-width: 860px;
+    display: block;
     margin: 0 auto 28px;
+    color: var(--gold-dark);
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.35;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .vestro-help-heading h2 {
-    max-width: 1120px;
+    max-width: 1180px;
     margin: 0 auto;
-    font-size: clamp(38px, 4vw, 54px);
-    line-height: 1.12;
+    color: var(--navy-text);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(35px, 4.4vw, 55px);
+    font-weight: 600;
+    line-height: 1.13;
+    text-align: center;
 }
 
 .vestro-help-text {
@@ -555,7 +569,6 @@ margin: 0 auto;
 .vestro-help-text p + p {
     margin-top: 24px;
 }
-
 /* MEDICAL CARDS */
 
 
