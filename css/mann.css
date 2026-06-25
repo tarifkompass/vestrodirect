@@ -500,6 +500,42 @@ margin: 0 auto;
     font-size: 19px;
     line-height: 1.48;
 }
+/* MEDICAL ABOUT FIX */
+
+.medical-about-section .section-heading {
+    max-width: 1180px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.medical-about-section .section-kicker {
+    display: block;
+    margin: 0 auto 28px;
+    text-align: center;
+}
+
+.medical-about-section .section-heading h2 {
+    max-width: 1180px;
+    margin: 0 auto;
+    font-size: clamp(35px, 4.4vw, 55px);
+    line-height: 1.13;
+}
+
+.medical-about-section .medical-about-text {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.medical-about-section .medical-about-text p {
+    margin: 0;
+    color: var(--text);
+    font-size: 19px;
+    line-height: 1.72;
+}
+
+.medical-about-section .medical-about-text p + p {
+    margin-top: 24px;
+}
 /* VESTRO HELP SECTION */
 
 .vestro-help-section {
