@@ -520,11 +520,8 @@ margin: 0 auto;
 }
 
 .vestro-help-heading {
-    max-width: 1180px;
-    margin: 0 auto 48px;
-    text-align: left;
+    margin-bottom: 48px;
 }
-
 .vestro-help-heading .section-kicker {
     max-width: 860px;
     margin: 0 auto 28px;
