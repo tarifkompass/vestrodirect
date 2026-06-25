@@ -1394,130 +1394,60 @@ margin: 0 auto;
 }
 }
 
+<!-- =========================
+     FOOTER
+========================= -->
 
-/* FOOTER — ОСТАВЛЕН БЕЗ ИЗМЕНЕНИЙ */
+<footer class="site-footer">
 
+    <div class="content-container">
 
-.footer {
-    width: 100%;
+        <div class="footer-links">
 
-    padding:
-        46px
-        20px
-        54px;
+            <a href="impressum.html" class="footer-link">
+                <img src="images/icons/impressum-icon.svg" alt="Impressum">
 
-    background: transparent;
-}
+                <span
+                    data-de="Impressum"
+                    data-en="Legal Notice">
+                    Impressum
+                </span>
+            </a>
 
+            <a href="datenschutz.html" class="footer-link">
+                <img src="images/icons/privacy-icon.svg" alt="Datenschutz">
 
-.footer-links {
-    display: flex;
+                <span
+                    data-de="Datenschutz"
+                    data-en="Privacy Policy">
+                    Datenschutz
+                </span>
+            </a>
 
-    justify-content: center;
-    align-items: center;
+            <a href="affiliate.html" class="footer-link">
+                <img src="images/icons/affiliate-icon.svg" alt="Affiliate Disclosure">
 
-    gap: 120px;
+                <span
+                    data-de="Partnerhinweis"
+                    data-en="Affiliate Disclosure">
+                    Partnerhinweis
+                </span>
+            </a>
 
-    flex-wrap: wrap;
-}
+        </div>
 
+        <div class="footer-copy">
 
-.footer-link {
-    width: 150px;
+            <p>© 2026 VestroDirect</p>
 
-    display: flex;
+            <p
+                data-de="Informationsplattform für lizenzierte digitale Gesundheitslösungen in Deutschland."
+                data-en="Information platform for licensed digital healthcare solutions in Germany.">
+                Informationsplattform für lizenzierte digitale Gesundheitslösungen in Deutschland.
+            </p>
 
-    flex-direction: column;
+        </div>
 
-    align-items: center;
+    </div>
 
-    text-align: center;
-
-    text-decoration: none;
-
-    transition:
-        transform 0.2s ease,
-        opacity 0.2s ease;
-}
-
-
-.footer-link img {
-    width: 72px;
-    height: 72px;
-
-    object-fit: contain;
-
-    display: block;
-
-    margin:
-        0
-        0
-        18px;
-}
-
-
-.footer-link span {
-    color: #d4af37;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 20px;
-
-    font-weight: 400;
-
-    line-height: 1.1;
-
-    text-decoration: none;
-}
-
-
-.footer-link::after {
-    content: "";
-
-    width: 72px;
-    height: 3px;
-
-    margin-top: 18px;
-
-    background: #d4af37;
-
-    border-radius: 999px;
-}
-
-
-.footer-link:hover {
-    transform:
-        translateY(-4px);
-
-    opacity: 0.85;
-}
-
-
-.footer-copy {
-    width: 100%;
-
-    margin:
-        28px
-        0
-        0;
-
-    text-align: center;
-
-    color: #d4af37;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 14px;
-
-    font-weight: 400;
-
-    line-height: 1.2;
-
-    opacity: 0.8;
-}
+</footer>
