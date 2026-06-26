@@ -479,12 +479,12 @@ a{
     padding-top:52px;
     padding-bottom:58px;
 
-    background:
-        linear-gradient(
-            180deg,
-            #fcfbf8 0%,
-            #f4ecdf 100%
-        );
+   background:
+    linear-gradient(
+        180deg,
+        #f3eadc 0%,
+        #eadcc8 100%
+    );
 
 }
 
