@@ -521,15 +521,13 @@ a{
 
     padding-top:52px;
     padding-bottom:64px;
-
     background:
-        linear-gradient(
-            180deg,
-            #efe6d8 0%,
-            #faf7f1 100%
-        );
-
-}
+    linear-gradient(
+        180deg,
+        #e7dbc8 0%,
+        #faf7f1 100%
+    );
+   }
 }
 /* ==================================================
    12 TRUST CARDS
