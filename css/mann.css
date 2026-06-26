@@ -433,7 +433,12 @@ a{
 
     padding-top:46px;
     padding-bottom:52px;
-
+    background:
+        linear-gradient(
+            180deg,
+            #efe6d8 0%,
+            #faf7f1 100%
+        );
 }
 
 .medical-about-grid{
@@ -479,13 +484,12 @@ a{
     padding-top:52px;
     padding-bottom:58px;
 
-   background:
-    linear-gradient(
-        180deg,
-        #faf8f4 0%,
-        #f7f2e9 55%,
-        #f4ede2 100%
-    );
+    background:
+        linear-gradient(
+            180deg,
+            #efe6d8 0%,
+            #faf7f1 100%
+        );
 
 }
 
@@ -513,6 +517,19 @@ a{
 
     margin-top:16px;
 
+   .services-section{
+
+    padding-top:52px;
+    padding-bottom:64px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #efe6d8 0%,
+            #faf7f1 100%
+        );
+
+}
 }
 /* ==================================================
    12 TRUST CARDS
@@ -649,8 +666,12 @@ a{
 
     padding:54px 24px 64px;
 
-    background:#ffffff;
-
+    background:
+    linear-gradient(
+        180deg,
+        #efe6d8 0%,
+        #faf7f1 100%
+    );
 }
 
 .faq-section .section-heading{
