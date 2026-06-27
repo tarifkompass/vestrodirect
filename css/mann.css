@@ -655,6 +655,195 @@ a{
     line-height:1.48;
 
 }
+
+/* ==============================
+   PARTNER OFFERS
+============================== */
+
+.partner-offers-section{
+    padding:70px 24px 70px;
+    background:linear-gradient(
+        180deg,
+        #f6efe4 0%,
+        #fbf7ef 100%
+    );
+}
+
+.partner-offers-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:28px;
+    margin-top:36px;
+}
+
+.partner-offer-card{
+    min-height:520px;
+    padding:36px 34px;
+    border:1px solid rgba(190,161,75,.30);
+    border-radius:22px;
+    background:linear-gradient(
+        145deg,
+        #ffffff,
+        #fffdf8
+    );
+    box-shadow:0 12px 26px rgba(36,54,73,.07);
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.partner-offer-card:hover{
+    transform:translateY(-4px);
+    border-color:rgba(169,129,47,.55);
+    box-shadow:0 18px 34px rgba(36,54,73,.13);
+}
+
+.partner-logo-wrap{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    margin-bottom:24px;
+}
+
+.partner-logo{
+    max-width:170px;
+    height:auto;
+    display:block;
+}
+
+.partner-offer-card h3{
+    color:var(--navy-text);
+    font-family:"Times New Roman",serif;
+    font-size:34px;
+    font-weight:700;
+    line-height:1.15;
+    margin-bottom:14px;
+}
+
+.partner-card-text{
+    color:var(--text);
+    font-size:17px;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.partner-benefits{
+    list-style:none;
+    padding:0;
+    margin:0 0 24px;
+}
+
+.partner-benefits li{
+    position:relative;
+    padding-left:24px;
+    margin-bottom:10px;
+    color:var(--text);
+    font-size:16px;
+    line-height:1.5;
+}
+
+.partner-benefits li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:0;
+    color:#b88a18;
+    font-weight:700;
+}
+
+.partner-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:20px;
+}
+
+.partner-links a{
+    display:inline-flex;
+    align-items:center;
+    padding:8px 14px;
+    border-radius:999px;
+    border:1px solid rgba(190,161,75,.35);
+    background:rgba(255,255,255,.72);
+    color:#b88a18;
+    font-size:15px;
+    font-weight:600;
+    text-decoration:none;
+    transition:
+        background .2s ease,
+        border-color .2s ease,
+        transform .2s ease;
+}
+
+.partner-links a:hover{
+    background:#fff8e6;
+    border-color:rgba(169,129,47,.65);
+    transform:translateY(-2px);
+}
+
+.partner-button{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:28px;
+    padding:14px 28px;
+    border-radius:999px;
+    background:linear-gradient(
+        135deg,
+        #c89a1d,
+        #e0ba57
+    );
+    color:#ffffff;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:700;
+    box-shadow:0 10px 22px rgba(184,138,24,.24);
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+}
+
+.partner-button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 14px 28px rgba(184,138,24,.32);
+}
+
+.partner-offer-card-empty{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(
+        145deg,
+        #ffffff,
+        var(--medical-blue)
+    );
+}
+
+.empty-offer-inner{
+    width:100%;
+    min-height:180px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px dashed rgba(190,161,75,.45);
+    border-radius:18px;
+    color:rgba(36,54,73,.55);
+    font-family:"Times New Roman",serif;
+    font-size:28px;
+    font-weight:700;
+}
+
+/* Mobile */
+@media (max-width:900px){
+    .partner-offers-grid{
+        grid-template-columns:1fr;
+    }
+
+    .partner-offer-card{
+        min-height:auto;
+    }
+}
 /* ==================================================
    13 FAQ
 ================================================== */
