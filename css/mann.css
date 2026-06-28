@@ -709,7 +709,7 @@ a{
 /* CARD */
 
 .partner-offer-card{
-    min-height:560px;
+    min-height:520px;
     padding:0;
     overflow:hidden;
     border:1px solid rgba(196,161,75,.56);
@@ -765,9 +765,9 @@ a{
 .partner-card-text{
     max-width:460px;
     margin:0 auto 18px;
-    color:var(--navy-text);
+    color:#16233b;
     font-size:16px;
-    font-weight:500;
+    font-weight:700;
     line-height:1.55;
 }
 
@@ -949,7 +949,7 @@ a{
 .partner-button{
     display:flex;
     justify-content:center;
-    margin-top:20px;
+    margin-top:10px;
     padding:0;
     background:none;
     border:none;
