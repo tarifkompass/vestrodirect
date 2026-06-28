@@ -662,11 +662,7 @@ a{
 
 .partner-offers-section{
     padding:52px 24px 64px;
-    background:linear-gradient(
-        180deg,
-        #efe6d8 0%,
-        #faf7f1 100%
-    );
+    background:linear-gradient(180deg,#efe6d8 0%,#faf7f1 100%);
 }
 
 .partner-offers-section .section-heading{
@@ -678,30 +674,31 @@ a{
 .partner-offers-section .section-badge{
     display:block;
     margin-bottom:18px;
+    color:#b88212;
     font-size:14px;
-    line-height:1.2;
     font-weight:700;
+    line-height:1.2;
     letter-spacing:.32em;
     text-transform:uppercase;
-    color:#b88212;
 }
 
 .partner-offers-section .section-heading h2{
     margin:0;
-    font-family:"Times New Roman", serif;
-    font-size:52px;
-    line-height:1.05;
-    font-weight:700;
     color:var(--navy-text);
+    font-family:"Times New Roman",serif;
+    font-size:52px;
+    font-weight:700;
+    line-height:1.05;
 }
 
 .partner-offers-section .section-heading p{
     max-width:760px;
     margin:22px auto 0;
+    color:var(--text);
     font-size:18px;
     line-height:1.55;
-    color:var(--text);
 }
+
 .partner-offers-grid{
     display:grid;
     grid-template-columns:repeat(2,minmax(0,1fr));
@@ -709,246 +706,270 @@ a{
     margin-top:36px;
 }
 
+/* CARD */
+
 .partner-offer-card{
-    min-height:520px;
-    padding:36px 34px;
-    border:1px solid rgba(190,161,75,.30);
-    border-radius:22px;
-    background:linear-gradient(
-        145deg,
-        #ffffff,
-        #fffdf8
-    );
-    box-shadow:0 12px 26px rgba(36,54,73,.07);
-    transition:
-        transform .25s ease,
-        border-color .25s ease,
-        box-shadow .25s ease;
-}
-.partner-offer-card:hover{
-
-    transform:translateY(-6px);
-
-    border-color:#c49f37;
-
+    min-height:620px;
+    padding:0;
+    overflow:hidden;
+    border:1px solid rgba(196,161,75,.58);
+    border-radius:28px;
+    background:#fff;
     box-shadow:
-        0 28px 55px rgba(36,54,73,.16);
-
+        0 26px 60px rgba(36,54,73,.14),
+        0 4px 14px rgba(184,138,24,.10);
+    transition:.25s ease;
 }
+
+.partner-offer-card:hover{
+    transform:translateY(-5px);
+    border-color:#c49f37;
+    box-shadow:
+        0 34px 70px rgba(36,54,73,.18),
+        0 6px 18px rgba(184,138,24,.14);
+}
+
+/* EUROCLINIX HEADER */
 
 .partner-logo-wrap{
-
-    margin-bottom:28px;
-
+    margin:0;
 }
+
 .partner-logo-header{
     position:relative;
-    height:132px;
-    margin:-36px -34px 28px;
-    background:linear-gradient(180deg,#244b8d 0%, #1d3f7a 100%);
-    border-radius:22px 22px 0 0;
+    height:150px;
     display:flex;
     align-items:flex-start;
     justify-content:center;
-    padding-top:26px;
+    padding-top:34px;
     overflow:hidden;
+    background:
+        radial-gradient(circle at 50% -30%,rgba(255,255,255,.18),transparent 40%),
+        linear-gradient(180deg,#0b376f 0%,#123f7b 48%,#224f91 100%);
+    border-radius:28px 28px 0 0;
 }
+
+.partner-logo-header::before{
+    content:"";
+    position:absolute;
+    left:-12%;
+    right:-12%;
+    bottom:-48px;
+    height:92px;
+    background:#fff;
+    border-radius:0 0 50% 50%;
+    z-index:1;
+}
+
 .partner-logo-header::after{
     content:"";
     position:absolute;
-    left:-22%;
-right:-22%;
-bottom:-70px;
-height:125px;
-
-    background:linear-gradient(180deg,#2a4d8f 0%, #22447f 100%);
-
+    left:-16%;
+    right:-16%;
+    bottom:-40px;
+    height:88px;
+    border-bottom:2px solid rgba(196,161,75,.75);
     border-radius:0 0 50% 50%;
+    z-index:2;
 }
+
 .partner-logo{
-position:relative;
-z-index:2;
-    max-width:210px;
-
-    max-height:38px;
-
+    position:relative;
+    z-index:3;
+    max-width:250px;
+    max-height:56px;
     width:auto;
-
     height:auto;
-
     display:block;
+}
 
+/* BODY */
+
+.partner-card-body{
+    padding:42px 56px 48px;
+    text-align:left;
 }
-.partner-offer-card{
-    min-height:560px;
-    padding:38px;
-    border:1px solid rgba(196,161,75,.46);
-    border-radius:26px;
-    background:#ffffff;
-    box-shadow:
-        0 22px 50px rgba(36,54,73,.13),
-        0 2px 8px rgba(184,138,24,.08);
-    transition:
-        transform .25s ease,
-        box-shadow .25s ease,
-        border-color .25s ease;
-}
+
 .partner-card-text{
-
-    color:#27384f;
-
-    font-size:18px;
-
-    line-height:1.85;
-
+    margin:0 auto 32px;
+    color:#122743;
+    font-size:22px;
     font-weight:500;
-
-    margin-bottom:30px;
-
+    line-height:1.65;
 }
+
+.partner-divider{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:4px 0 32px;
+    color:#c49a2c;
+}
+
+.partner-divider::before,
+.partner-divider::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:rgba(196,161,75,.45);
+}
+
+.partner-divider span{
+    width:34px;
+    height:34px;
+    margin:0 18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid rgba(196,161,75,.55);
+    border-radius:50%;
+    color:#c49a2c;
+    font-size:18px;
+    font-weight:700;
+}
+
+/* BENEFITS */
+
 .partner-benefits{
     list-style:none;
     padding:0;
-    margin:0 0 24px;
+    margin:0 0 34px;
 }
 
 .partner-benefits li{
-
     position:relative;
-
-    padding-left:32px;
-
-    margin-bottom:12px;
-
-    color:#23344c;
-
-    font-size:17px;
-
+    padding-left:54px;
+    margin-bottom:22px;
+    color:#122743;
+    font-size:22px;
     font-weight:500;
-
-    line-height:1.6;
-
+    line-height:1.4;
 }
 
 .partner-benefits li::before{
     content:"✓";
     position:absolute;
     left:0;
-    top:2px;
-
-    width:18px;
-    height:18px;
-
+    top:-1px;
+    width:32px;
+    height:32px;
     display:flex;
     align-items:center;
     justify-content:center;
-
-    background:#c79a2b;
-    color:#ffffff;
-
+    border:1px solid rgba(196,161,75,.65);
     border-radius:50%;
-
-    font-size:11px;
+    color:#b88716;
+    background:#fffdf8;
+    font-size:21px;
     font-weight:700;
+}
+
+/* TRUST LINE */
+
+.partner-trust-line{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin:34px 0 30px;
+    color:#b88716;
+    font-size:19px;
+    font-weight:600;
+}
+
+.partner-trust-line::before,
+.partner-trust-line::after{
+    content:"";
+    flex:1;
+    border-top:2px dotted rgba(196,161,75,.55);
+}
+
+.partner-trust-line span:not(:last-child)::after{
+    content:"·";
+    margin-left:14px;
+    color:#c49a2c;
+}
+
+/* LINKS */
+
+.partner-links-title{
+    margin:0 0 18px;
+    color:#b88716;
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
 }
 
 .partner-links{
     display:flex;
     flex-wrap:wrap;
-    gap:10px;
-    margin-top:34px;
+    justify-content:center;
+    gap:16px;
+    margin:0;
 }
 
 .partner-links a{
-
     display:inline-flex;
-
     align-items:center;
-
-    padding:11px 18px;
-
+    justify-content:center;
+    min-width:118px;
+    padding:13px 22px;
+    border:1px solid rgba(196,161,75,.55);
     border-radius:999px;
-
-    border:1px solid rgba(196,161,75,.45);
-
     background:#fffdf8;
-
-    color:#b88716;
-
-    font-size:16px;
-
+    color:#8a6108;
+    font-size:20px;
     font-weight:700;
-
     text-decoration:none;
-
-    transition:.2s;
-
+    transition:.2s ease;
 }
+
 .partner-links a:hover{
-
-    background:#fff6dd;
-
-    border-color:#c49f37;
-
     transform:translateY(-2px);
-
+    background:#fff6dd;
+    border-color:#c49f37;
 }
+
+/* BUTTON */
 
 .partner-button{
-
-    display:inline-flex;
-
-    margin-top:30px;
-
+    display:flex;
+    justify-content:center;
+    margin-top:38px;
     padding:0;
-
     background:none;
-
     border:none;
-
     box-shadow:none;
-
+    text-decoration:none;
 }
 
 .partner-button img{
-
-    width:165px;
-
+    width:230px;
     height:auto;
-
     display:block;
-
-    transition:.25s;
-
+    transition:.25s ease;
 }
 
 .partner-button:hover{
-
-    transform:none;
-
+    background:none;
+    border:none;
     box-shadow:none;
-
 }
 
 .partner-button:hover img{
-
-    transform:translateY(-2px) scale(1.03);
-
+    transform:translateY(-2px) scale(1.04);
 }
-.partner-button:hover{
-    transform:translateY(-2px);
-    box-shadow:0 14px 28px rgba(184,138,24,.32);
-}
+
+/* EMPTY CARD */
 
 .partner-offer-card-empty{
     display:flex;
     align-items:center;
     justify-content:center;
-    background:linear-gradient(
-        145deg,
-        #ffffff,
-        var(--medical-blue)
-    );
+    background:linear-gradient(145deg,#ffffff,#f7fbfc);
 }
 
 .empty-offer-inner{
@@ -965,14 +986,27 @@ z-index:2;
     font-weight:700;
 }
 
-/* Mobile */
+/* MOBILE */
+
 @media (max-width:900px){
     .partner-offers-grid{
         grid-template-columns:1fr;
     }
 
-    .partner-offer-card{
-        min-height:auto;
+    .partner-card-body{
+        padding:34px 28px 42px;
+    }
+
+    .partner-offers-section .section-heading h2{
+        font-size:42px;
+    }
+
+    .partner-benefits li{
+        font-size:19px;
+    }
+
+    .partner-card-text{
+        font-size:19px;
     }
 }
 /* ==================================================
