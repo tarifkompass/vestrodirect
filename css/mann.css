@@ -721,6 +721,8 @@ a{
         0 22px 48px rgba(36,54,73,.14),
         inset 0 1px 0 rgba(255,255,255,.95);
     transition:.25s ease;
+   display:flex;
+   flex-direction:column;
 }
 
 .partner-offer-card:hover{
@@ -758,8 +760,11 @@ a{
 /* BODY */
 
 .partner-card-body{
-    padding:24px 24px 30px;
+    padding:18px 24px 20px;
     text-align:center;
+   flex:1;
+   display:flex;
+   flex-direction:column;
 }
 
 .partner-card-text{
@@ -777,7 +782,7 @@ a{
     display:flex;
     align-items:center;
     justify-content:center;
-    margin:0 0 10px;
+    margin:6px 0 6px;
 }
 
 .partner-divider::before,
@@ -791,7 +796,7 @@ a{
 .partner-divider span{
     width:26px;
     height:26px;
-    margin:0 14px;
+    margin:0 10px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -949,7 +954,9 @@ a{
 .partner-button{
     display:flex;
     justify-content:center;
-    margin-top:10px;
+    margin-top:auto;
+   padding-top:14px;
+   padding-bottom:14px;
     padding:0;
     background:none;
     border:none;
