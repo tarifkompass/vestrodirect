@@ -917,7 +917,21 @@ languageButtons.forEach((button)=>{
 setLanguage("de");
 
 </script>
+<script>
+  document.addEventListener('click', function(event) {
+    var link = event.target.closest('.partner-links a, a.partner-button');
 
+    if (!link) return;
+
+    if (typeof gtag === 'function') {
+      gtag('event', 'affiliate_click', {
+        link_text: link.innerText.trim() || link.getAttribute('alt') || 'affiliate_link',
+        link_url: link.href,
+        page_path: window.location.pathname
+      });
+    }
+  });
+</script>
 </body>
 
 </html>
