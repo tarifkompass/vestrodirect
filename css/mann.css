@@ -710,10 +710,25 @@ a{
     min-height:560px;
     padding:0;
     overflow:hidden;
-    border:1px solid rgba(196,161,75,.50);
+    border:1px solid rgba(196,161,75,.52);
     border-radius:24px;
-    background:#fff;
-    box-shadow:0 18px 42px rgba(36,54,73,.12);
+
+    background:
+        radial-gradient(
+            circle at 50% 96%,
+            rgba(196,161,75,.10) 0%,
+            rgba(196,161,75,0) 38%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #fffdf8 100%
+        );
+
+    box-shadow:
+        0 22px 48px rgba(36,54,73,.14),
+        inset 0 1px 0 rgba(255,255,255,.95);
+
     transition:.25s ease;
 }
 
