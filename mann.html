@@ -919,13 +919,19 @@ setLanguage("de");
 </script>
 <script>
   document.addEventListener('click', function(event) {
-    var link = event.target.closest('.partner-links a, a.partner-button');
+    var link = event.target.closest('a');
 
     if (!link) return;
 
+    var isAffiliateLink =
+      link.closest('.partner-links') ||
+      link.classList.contains('partner-button');
+
+    if (!isAffiliateLink) return;
+
     if (typeof gtag === 'function') {
       gtag('event', 'affiliate_click', {
-        link_text: link.innerText.trim() || link.getAttribute('alt') || 'affiliate_link',
+        link_text: link.innerText.trim() || link.querySelector('img')?.alt || 'affiliate_link',
         link_url: link.href,
         page_path: window.location.pathname
       });
