@@ -709,7 +709,7 @@ a{
 /* CARD */
 
 .partner-offer-card{
-    min-height:620px;
+    min-height:560px;
     padding:0;
     overflow:hidden;
     border:1px solid rgba(196,161,75,.58);
@@ -737,11 +737,11 @@ a{
 
 .partner-logo-header{
     position:relative;
-    height:150px;
+    height:118px;
     display:flex;
     align-items:flex-start;
     justify-content:center;
-    padding-top:34px;
+    padding-top:26px;
     overflow:hidden;
     background:
         radial-gradient(circle at 50% -30%,rgba(255,255,255,.18),transparent 40%),
@@ -786,14 +786,14 @@ a{
 /* BODY */
 
 .partner-card-body{
-    padding:42px 56px 48px;
+    padding:34px 44px 38px;
     text-align:left;
 }
 
 .partner-card-text{
-    margin:0 auto 32px;
+    margin:0 auto 24px;
     color:#122743;
-    font-size:22px;
+    font-size:18px;
     font-weight:500;
     line-height:1.65;
 }
@@ -839,10 +839,10 @@ a{
 
 .partner-benefits li{
     position:relative;
-    padding-left:54px;
-    margin-bottom:22px;
+    padding-left:42px;
+    margin-bottom:14px;
     color:#122743;
-    font-size:22px;
+    font-size:18px;
     font-weight:500;
     line-height:1.4;
 }
@@ -915,13 +915,13 @@ a{
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    min-width:118px;
-    padding:13px 22px;
+    min-width:auto;
+    padding:10px 18px;
     border:1px solid rgba(196,161,75,.55);
     border-radius:999px;
     background:#fffdf8;
     color:#8a6108;
-    font-size:20px;
+    font-size:16px;
     font-weight:700;
     text-decoration:none;
     transition:.2s ease;
@@ -947,7 +947,7 @@ a{
 }
 
 .partner-button img{
-    width:230px;
+    width:175px;
     height:auto;
     display:block;
     transition:.25s ease;
