@@ -765,7 +765,7 @@ a{
 .partner-card-text{
     max-width:460px;
     margin:0 auto 18px;
-    color:#122743;
+    color:#0d1f36;
     font-size:16px;
     font-weight:500;
     line-height:1.55;
@@ -819,7 +819,7 @@ a{
     list-style:none;
     padding-left:34px;
     margin-bottom:8px;
-    color:#122743;
+    color:#0b1d34;
     font-size:15px;
     font-weight:500;
     line-height:1.4;
@@ -851,9 +851,9 @@ a{
     justify-content:center;
     gap:8px;
     margin:18px 0 18px;
-    color:#b88716;
+    color:#a77a15;
     font-size:13px;
-    font-weight:600;
+    font-weight:500;
 }
 
 .partner-trust-line::before,
@@ -872,7 +872,7 @@ a{
 
 .partner-links-title{
     margin:0 0 12px;
-    color:#9b6c08;
+    color:#8c6a12;
     font-size:12px;
     font-weight:600;
     line-height:1.25;
