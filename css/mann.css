@@ -752,8 +752,11 @@ a{
 }
 
 .partner-logo{
+    width:auto;
+    height:auto;
     max-width:235px;
     max-height:64px;
+    object-fit:contain;
     display:block;
 }
 
