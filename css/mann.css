@@ -805,23 +805,17 @@ a{
 /* BENEFITS */
 
 .partner-benefits{
-    margin:0 0 16px;
+    list-style:none;
+    padding:0;
+    margin:0 0 12px;
 }
 
 .partner-benefits li{
-    padding-left:32px;
-    margin-bottom:8px;
+    list-style:none;
+    padding-left:30px;
+    margin-bottom:6px;
     font-size:15px;
-    line-height:1.4;
-}
-.partner-benefits li{
-    position:relative;
-    padding-left:34px;
-    margin-bottom:10px;
-    color:#122743;
-    font-size:16px;
-    font-weight:500;
-    line-height:1.45;
+    line-height:1.35;
 }
 
 .partner-benefits li::before{
@@ -881,19 +875,17 @@ a{
 }
 .partner-links{
     display:grid;
-    grid-template-columns:repeat(4,max-content);
+    grid-template-columns:repeat(4,auto);
     justify-content:center;
-    gap:9px 10px;
+    gap:8px 8px;
     margin:0;
 }
 
 .partner-links a{
-    padding:7px 13px;
-    border:1px solid rgba(196,161,75,.42);
-    border-radius:999px;
-    font-size:13px;
+    padding:6px 11px;
+    font-size:12.5px;
     font-weight:700;
-    line-height:1.15;
+    line-height:1.1;
 }
 
 .partner-links a:nth-child(5),
@@ -913,7 +905,7 @@ a{
 .partner-button{
     display:flex;
     justify-content:center;
-    margin-top:24px;
+    margin-top:20px;
     padding:0;
     background:none;
     border:none;
@@ -922,7 +914,7 @@ a{
 }
 
 .partner-button img{
-    width:155px;
+    width:145px;
     height:auto;
     display:block;
     transition:.25s ease;
