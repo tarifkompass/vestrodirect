@@ -684,7 +684,7 @@ a{
 
 .partner-offers-section .section-heading h2{
     margin:0;
-    color:var(--navy-text);
+    color:#071a33;
     font-family:"Times New Roman",serif;
     font-size:52px;
     font-weight:700;
@@ -694,7 +694,7 @@ a{
 .partner-offers-section .section-heading p{
     max-width:760px;
     margin:22px auto 0;
-    color:var(--text);
+    color:#111827;
     font-size:18px;
     line-height:1.55;
 }
@@ -706,66 +706,66 @@ a{
     margin-top:36px;
 }
 
+/* CARD */
+
 .partner-offer-card{
     min-height:560px;
     padding:0;
     overflow:hidden;
-    border:1px solid rgba(196,161,75,.52);
+    border:1px solid rgba(196,161,75,.56);
     border-radius:24px;
-
     background:
-        radial-gradient(
-            circle at 50% 96%,
-            rgba(196,161,75,.10) 0%,
-            rgba(196,161,75,0) 38%
-        ),
-        linear-gradient(
-            180deg,
-            #ffffff 0%,
-            #fffdf8 100%
-        );
-
+        radial-gradient(circle at 50% 100%,rgba(196,161,75,.10),rgba(196,161,75,0) 38%),
+        linear-gradient(180deg,#ffffff 0%,#fffdf8 100%);
     box-shadow:
         0 22px 48px rgba(36,54,73,.14),
         inset 0 1px 0 rgba(255,255,255,.95);
-
     transition:.25s ease;
 }
 
 .partner-offer-card:hover{
     transform:translateY(-4px);
     border-color:#c49f37;
-    box-shadow:0 24px 52px rgba(36,54,73,.16);
+    box-shadow:
+        0 28px 58px rgba(36,54,73,.18),
+        0 4px 14px rgba(184,138,24,.12);
 }
 
 /* HEADER */
 
+.partner-logo-wrap{
+    margin:0;
+}
+
 .partner-logo-header{
-    height:92px;
+    height:96px;
     display:flex;
     align-items:center;
     justify-content:center;
-    background:linear-gradient(180deg,#123f7b 0%,#284f8f 100%);
+    background:
+        radial-gradient(circle at 50% 0%,rgba(255,255,255,.18),transparent 44%),
+        linear-gradient(180deg,#0d376f 0%,#17457f 55%,#244f8f 100%);
     border-radius:24px 24px 0 0;
+    border-bottom:3px solid rgba(196,161,75,.72);
 }
 
 .partner-logo{
-    max-width:230px;
-    max-height:62px;
+    max-width:235px;
+    max-height:64px;
     display:block;
 }
 
 /* BODY */
 
 .partner-card-body{
-    padding:24px 40px 30px;
+    padding:24px 36px 30px;
     text-align:center;
 }
 
 .partner-card-text{
     max-width:460px;
     margin:0 auto 18px;
-    color:#0d1f36;
+    color:#050b14;
     font-size:16px;
     font-weight:500;
     line-height:1.55;
@@ -777,7 +777,7 @@ a{
     display:flex;
     align-items:center;
     justify-content:center;
-    margin:0 0 18px;
+    margin:0 0 20px;
 }
 
 .partner-divider::before,
@@ -785,53 +785,60 @@ a{
     content:"";
     flex:1;
     height:1px;
-    background:rgba(196,161,75,.38);
+    background:rgba(196,161,75,.42);
 }
 
 .partner-divider span{
-    width:24px;
-    height:24px;
+    width:26px;
+    height:26px;
     margin:0 14px;
     display:flex;
     align-items:center;
     justify-content:center;
-    border:1px solid rgba(196,161,75,.55);
+    border:1px solid rgba(196,161,75,.65);
     border-radius:50%;
     background:#fff;
     color:#c49a2c;
-    font-size:14px;
+    font-size:15px;
     font-weight:700;
 }
 
-/* BENEFITS */
+/* BENEFITS AS ICON TILES */
 
 .partner-benefits{
-    width:max-content;
-    max-width:100%;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:0;
     list-style:none;
     padding:0;
-    margin:0 auto 18px;
-    text-align:left;
+    margin:0 0 22px;
 }
 
 .partner-benefits li{
     position:relative;
     list-style:none;
-    padding-left:34px;
-    margin-bottom:8px;
-    color:#0b1d34;
+    padding:42px 8px 0;
+    margin:0;
+    color:#050b14;
+    font-family:"Times New Roman",serif;
     font-size:15px;
-    font-weight:500;
-    line-height:1.4;
+    font-weight:700;
+    line-height:1.18;
+    text-align:center;
+}
+
+.partner-benefits li:not(:last-child){
+    border-right:1px dotted rgba(196,161,75,.45);
 }
 
 .partner-benefits li::before{
     content:"✓";
     position:absolute;
-    left:0;
+    left:50%;
     top:0;
-    width:20px;
-    height:20px;
+    transform:translateX(-50%);
+    width:32px;
+    height:32px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -839,18 +846,19 @@ a{
     border-radius:50%;
     background:#fff;
     color:#b88716;
-    font-size:14px;
+    font-family:Arial,sans-serif;
+    font-size:18px;
     font-weight:800;
 }
 
-/* TRUST */
+/* TRUST LINE */
 
 .partner-trust-line{
     display:flex;
     align-items:center;
     justify-content:center;
     gap:8px;
-    margin:18px 0 18px;
+    margin:18px 0 16px;
     color:#a77a15;
     font-size:13px;
     font-weight:500;
@@ -860,7 +868,7 @@ a{
 .partner-trust-line::after{
     content:"";
     flex:1;
-    border-top:1px dotted rgba(196,161,75,.45);
+    border-top:1px dotted rgba(196,161,75,.48);
 }
 
 .partner-trust-line span:not(:last-child)::after{
@@ -871,21 +879,32 @@ a{
 /* LINKS */
 
 .partner-links-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
     margin:0 0 12px;
     color:#8c6a12;
-    font-size:12px;
-    font-weight:600;
-    line-height:1.25;
-    letter-spacing:.11em;
-    text-transform:uppercase;
+    font-family:"Times New Roman",serif;
+    font-size:18px;
+    font-weight:700;
+    line-height:1.2;
+    letter-spacing:0;
+    text-transform:none;
+}
+
+.partner-links-title::before,
+.partner-links-title::after{
+    content:"";
+    width:86px;
+    border-top:1px dotted rgba(196,161,75,.45);
 }
 
 .partner-links{
-    display:flex;
-    flex-wrap:wrap;
+    display:grid;
+    grid-template-columns:repeat(4,max-content);
     justify-content:center;
     gap:8px 10px;
-    max-width:440px;
     margin:0 auto;
 }
 
@@ -893,16 +912,28 @@ a{
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    padding:7px 13px;
-    border:1px solid rgba(196,161,75,.42);
+    padding:7px 14px;
+    border:1px solid rgba(196,161,75,.48);
     border-radius:999px;
     background:#fffdf8;
-    color:#8a6108;
+    color:#050b14;
     font-size:13px;
     font-weight:700;
     line-height:1.15;
     text-decoration:none;
     transition:.2s ease;
+}
+
+.partner-links a:nth-child(5){
+    grid-column:1 / 2;
+}
+
+.partner-links a:nth-child(6){
+    grid-column:2 / 4;
+}
+
+.partner-links a:nth-child(7){
+    grid-column:4 / 5;
 }
 
 .partner-links a:hover{
@@ -916,7 +947,7 @@ a{
 .partner-button{
     display:flex;
     justify-content:center;
-    margin-top:18px;
+    margin-top:20px;
     padding:0;
     background:none;
     border:none;
@@ -924,8 +955,17 @@ a{
     text-decoration:none;
 }
 
+.partner-button::before,
+.partner-button::after{
+    content:"";
+    width:92px;
+    align-self:center;
+    border-top:1px dotted rgba(196,161,75,.45);
+    margin:0 16px;
+}
+
 .partner-button img{
-    width:145px;
+    width:155px;
     height:auto;
     display:block;
     transition:.25s ease;
@@ -947,18 +987,20 @@ a{
     display:flex;
     align-items:center;
     justify-content:center;
-    background:linear-gradient(145deg,#ffffff,#f7fbfc);
+    background:
+        radial-gradient(circle at 50% 100%,rgba(196,161,75,.08),rgba(196,161,75,0) 42%),
+        linear-gradient(180deg,#ffffff 0%,#fffdf8 100%);
 }
 
 .empty-offer-inner{
-    width:100%;
-    min-height:180px;
+    width:86%;
+    min-height:170px;
     display:flex;
     align-items:center;
     justify-content:center;
     border:1px dashed rgba(190,161,75,.45);
     border-radius:18px;
-    color:rgba(36,54,73,.55);
+    color:rgba(20,30,44,.55);
     font-family:"Times New Roman",serif;
     font-size:28px;
     font-weight:700;
@@ -972,11 +1014,35 @@ a{
     }
 
     .partner-card-body{
-        padding:24px 26px 30px;
+        padding:24px 24px 30px;
     }
 
     .partner-offers-section .section-heading h2{
         font-size:42px;
+    }
+
+    .partner-benefits{
+        grid-template-columns:repeat(2,1fr);
+        gap:16px 0;
+    }
+
+    .partner-benefits li:nth-child(2){
+        border-right:none;
+    }
+
+    .partner-links{
+        grid-template-columns:repeat(2,max-content);
+    }
+
+    .partner-links a:nth-child(5),
+    .partner-links a:nth-child(6),
+    .partner-links a:nth-child(7){
+        grid-column:auto;
+    }
+
+    .partner-button::before,
+    .partner-button::after{
+        display:none;
     }
 }
 /* ==================================================
