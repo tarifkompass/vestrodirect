@@ -542,44 +542,114 @@ a{
 
 .portal-card p{
     position:relative;
-    z-index:1;
-    max-width:280px;
-    margin-top:12px;
-    color:var(--text);
-    font-size:17px;
-    line-height:1.52;
+    z-index:2;
+
+    margin-top:14px;
+    margin-bottom:20px;
+
+    color:#BE912F;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:20px;
+    font-weight:700;
+    letter-spacing:.04em;
+    line-height:1.2;
+}
+.portal-card p::after{
+    content:"";
+    display:block;
+
+    width:72px;
+    height:2px;
+
+    margin-top:16px;
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        #D4AF37,
+        rgba(212,175,55,.25)
+    );
 }
 .card-points{
+
     position:relative;
-    z-index:1;
+
+    z-index:2;
+
     display:flex;
-    flex-direction:column;
-    gap:7px;
-    margin-top:18px;
-    padding-top:16px;
-    border-top:1px solid rgba(199,161,75,.34);
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    margin-top:6px;
+
     list-style:none;
+
 }
 
 .card-points li{
-    position:relative;
-    padding-left:18px;
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
     color:var(--text);
+
     font-size:14px;
-    font-weight:700;
-    line-height:1.35;
+
+    font-weight:600;
+
+    line-height:1.25;
+
 }
 
 .card-points li::before{
-    content:"";
-    position:absolute;
-    left:0;
-    top:.55em;
-    width:7px;
-    height:7px;
+
+    content:"✓";
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:34px;
+
+    height:34px;
+
+    margin-bottom:10px;
+
+    border:2px solid #C79A3A;
+
     border-radius:50%;
-    background:var(--gold);
+
+    background:#ffffff;
+
+    color:#B88728;
+
+    font-size:18px;
+
+    font-weight:800;
+
+    box-shadow:
+        0 4px 10px rgba(199,154,58,.18);
+
 }
+
 /* ==================================================
    13 EDITORIAL SECTION
 ================================================== */
