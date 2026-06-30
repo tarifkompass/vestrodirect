@@ -112,11 +112,28 @@ a{
 
 .lang-buttons{
     display:flex;
-    align-items:center;
+    align-items:flex-end;
+   flex-direction:column;
     gap:0;
     margin-top:28px;
 }
+.back-home{
+    margin-top:10px;
+    color:#D4AF37;
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:16px;
+    font-weight:600;
+    line-height:1.15;
+    text-decoration:none;
+    transition:
+        color .22s ease,
+        transform .22s ease;
+}
 
+.back-home:hover{
+    color:#F3D67A;
+    transform:translateX(-3px);
+}
 .lang-control{
     display:block;
     border:0;
