@@ -859,14 +859,20 @@ a{
 /* TRUST LINE */
 
 .partner-trust-line{
+
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:8px;
-    margin:18px 0 16px;
-    color:#a77a15;
-    font-size:13px;
-    font-weight:500;
+
+    gap:10px;
+
+    margin:18px 0 18px;
+
+    color:#A87B18;
+
+    font-size:14px;
+
+    font-weight:600;
 }
 
 .partner-trust-line::before,
