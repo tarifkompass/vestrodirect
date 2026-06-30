@@ -200,7 +200,7 @@ a{
     margin-bottom:14px;
     color:rgba(255,255,255,.95);
     font-size:19px;
-    line-height:1.60;
+    line-height:1.65;
 }
 
 .symptoms-intro{
@@ -238,7 +238,7 @@ a{
 }
 
 .hero-message{
-    margin-top:18px;
+    margin-top:20px;
     max-width:900px;
 }
 
@@ -254,7 +254,7 @@ a{
     margin:0;
     color:rgba(255,255,255,.88);
     font-size:18px;
-    line-height:1.55;
+    line-height:1.65;
 }
 
 /* ==================================================
