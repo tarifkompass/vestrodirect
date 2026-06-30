@@ -244,7 +244,7 @@ a{
 
 .hero-label{
     display:block;
-   margin-top:38px;
+   margin-top:42px;
     margin-bottom:18px;
     color:#d4af37;
     font-size:18px;
@@ -308,7 +308,7 @@ a{
 .hero-image{
     position:absolute;
     right:-10px;
-    top:145px;
+    top:130px;
     width:820px;
     display:flex;
     justify-content:flex-end;
