@@ -763,52 +763,139 @@ a{
 }
 
 /* ==================================================
-   15 FOOTER
+   14 FOOTER
 ================================================== */
 
 .site-footer{
+
     width:100%;
-    padding:54px 20px 42px;
+
+    padding:46px 20px 24px;
+
     background:#071D3A;
+
 }
 
-.footer-inner{
-    width:min(1180px,100%);
+.site-footer .content-container{
+
+    max-width:1180px;
+
     margin:0 auto;
-    text-align:center;
+
 }
 
-.footer-nav{
+.footer-links{
+
     display:flex;
     justify-content:center;
-    align-items:center;
+    align-items:flex-start;
     flex-wrap:wrap;
-    gap:52px;
+
+    gap:110px;
+
 }
 
-.footer-nav a{
-    color:#d4af37;
-    font-family:Georgia, "Times New Roman", serif;
-    font-size:24px;
-    font-weight:600;
-    line-height:1.15;
+.footer-link{
+
+    width:160px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    text-align:center;
     text-decoration:none;
+
     transition:
-        opacity .22s ease,
-        transform .22s ease;
+        transform .25s ease,
+        opacity .25s ease;
+
 }
 
-.footer-nav a:hover{
-    opacity:.82;
-    transform:translateY(-2px);
+.footer-link:hover{
+
+    transform:translateY(-4px);
+
+    opacity:.9;
+
+}
+
+.footer-link img{
+
+    width:56px;
+    height:56px;
+
+    display:block;
+
+    margin-bottom:10px;
+
+    object-fit:contain;
+
+}
+
+.footer-link span{
+
+    color:#D4AF37;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:26px;
+    font-weight:400;
+
+    line-height:1.15;
+
+}
+
+.footer-link::after{
+
+    content:"";
+
+    width:82px;
+    height:3px;
+
+    margin-top:14px;
+
+    border-radius:999px;
+
+    background:#D4AF37;
+
 }
 
 .footer-copy{
-    margin-top:34px;
-    color:rgba(255,255,255,.68);
-    font-size:15px;
+
+    margin-top:26px;
+
+    text-align:center;
+
+    color:rgba(255,255,255,.60);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+}
+
+.footer-copy p{
+
+    margin:0;
+
+}
+
+.footer-copy p:first-child{
+
+    font-size:14px;
     font-weight:500;
-    line-height:1.4;
+
+}
+
+.footer-copy p:last-child{
+
+    display:none;
+
 }
 
 /* ==================================================
