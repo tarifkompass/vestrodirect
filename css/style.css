@@ -222,10 +222,10 @@ a{
 
 .hero-container{
     width:100%;
-    max-width:1500px;
+    max-width:1600px;
     margin:0 auto;
     padding:0 60px 90px;
-    padding-left:104px;
+    padding-left:92px;
     display:flex;
     align-items:flex-start;
     justify-content:flex-start;
@@ -305,9 +305,9 @@ a{
 
 .hero-image{
     position:absolute;
-    right:74px;
-    top:118px;
-    width:705px;
+    right:24px;
+    top:128px;
+    width:795px;
     display:flex;
     justify-content:flex-end;
     align-items:flex-start;
@@ -315,7 +315,7 @@ a{
 
 .hero-image img{
     width:100%;
-    max-width:705px;
+    max-width:795px;
     height:auto;
     display:block;
     object-fit:contain;
