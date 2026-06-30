@@ -1231,7 +1231,7 @@ a{
     align-items:flex-start;
     flex-wrap:wrap;
 
-    gap:96px;
+    gap:110px;
 
 }
 
@@ -1262,8 +1262,8 @@ a{
 
 .footer-link img{
 
-    width:76px;
-    height:76px;
+    width:56px;
+    height:56px;
 
     display:block;
 
@@ -1282,7 +1282,7 @@ a{
         "Times New Roman",
         serif;
 
-    font-size:25px;
+    font-size:26px;
     font-weight:400;
 
     line-height:1.15;
