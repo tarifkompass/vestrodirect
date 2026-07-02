@@ -284,8 +284,8 @@ a{
 
 .hero-visual{
     position:absolute;
-    right:-430px;
-    top:-5px;
+    right:-630px;
+    top:20px;
     width:860px;
     display:flex;
     justify-content:flex-end;
