@@ -286,7 +286,7 @@ a{
     position:absolute;
     right:-330px;
     top:-45px;
-    width:760px;
+    width:860px;
     display:flex;
     justify-content:flex-end;
     align-items:flex-start;
@@ -294,7 +294,7 @@ a{
 
 .hero-visual img{
     width:100%;
-    max-width:760px;
+    max-width:860px;
     height:auto;
     display:block;
     object-fit:contain;
