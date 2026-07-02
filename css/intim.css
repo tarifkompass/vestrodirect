@@ -200,7 +200,7 @@ a{
 .hero-kicker{
     display:block;
     margin-bottom:14px;
-    color:#c79a3a;
+    color:var(--gold);
     font-size:15px;
     font-weight:500;
     line-height:1.35;
