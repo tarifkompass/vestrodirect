@@ -198,11 +198,11 @@ a{
 .hero-kicker{
     display:block;
     margin-bottom:14px;
-    color:#c79a3a;
-    font-size:17px;
-    font-weight:600;
+    color:var(--gold);
+    font-size:15px;
+    font-weight:500;
     line-height:1.35;
-    letter-spacing:.24em;
+    letter-spacing:.18em;
     text-transform:uppercase;
 }
 
@@ -220,18 +220,18 @@ a{
     max-width:720px;
     margin-bottom:14px;
     color:rgba(255,255,255,.95);
-    font-size:19px;
-    line-height:1.65;
+    font-size:18px;
+    line-height:1.75;
 }
 
 .symptoms-intro{
     margin-top:20px;
     margin-bottom:12px;
-    color:var(--gold-light);
+    color:var(--gold) !important;
     font-size:19px;
-    font-weight:700;
+    font-weight:300;
     font-style:italic;
-    line-height:1.45;
+    line-height:1.5;
 }
 
 .hero-topics{
@@ -246,15 +246,15 @@ a{
     display:flex;
     align-items:center;
     gap:8px;
-    color:var(--gold-light);
+    color:#F4F4F4;
     font-size:18px;
     font-weight:600;
     letter-spacing:.02em;
 }
 
 .topic-item img{
-    width:38px;
-    height:38px;
+    width:24px;
+    height:24px;
     display:block;
 }
 
@@ -262,22 +262,22 @@ a{
     margin-top:20px;
     max-width:900px;
 }
-
-.hero-message strong{
+.message-title{
     display:block;
-    margin-bottom:8px;
-    color:var(--gold-light);
+    color:var(--gold) !important;
     font-size:19px;
-    font-weight:700;
+    font-weight:300;
+    font-style:italic;
+    line-height:1.5;
+    margin:0 0 24px 0;
 }
-
 .hero-message p{
     margin:0;
-    color:rgba(255,255,255,.88);
+    color:#F4F4F4;
     font-size:18px;
-    line-height:1.65;
+    font-weight:400;
+    line-height:1.7;
 }
-
 /* ==================================================
    06 HERO IMAGE
 ================================================== */
