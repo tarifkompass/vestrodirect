@@ -229,7 +229,7 @@ a{
 .symptoms-intro{
     margin-top:20px;
     margin-bottom:12px;
-    color:#D4AF37 !important;
+    color:var(--gold) !important;
     font-weight:300;
     font-style:italic;
     line-height:1.5;
@@ -254,14 +254,14 @@ a{
 }
 
 .topic-item img{
-    width:28px;
-    height:28px;
+    width:24px;
+    height:24px;
     display:block;
 }
 
 .message-title{
     display:block;
-    color:#D4AF37 !important;
+    color:var(--gold) !important;
     font-size:19px;
     font-weight:300;
     font-style:italic;
