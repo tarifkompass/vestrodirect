@@ -231,7 +231,7 @@ a{
     margin-bottom:12px;
     color:var(--gold) !important;
     font-size:19px;
-    font-weight:300;
+    font-weight:250;
     font-style:italic;
     line-height:1.5;
 }
@@ -268,7 +268,7 @@ a{
     display:block;
     color:var(--gold) !important;
     font-size:19px;
-    font-weight:300;
+    font-weight:250;
     font-style:italic;
     line-height:1.5;
     margin:-10px 0 0 0;
