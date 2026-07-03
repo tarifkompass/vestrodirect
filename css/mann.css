@@ -109,7 +109,7 @@ a{
     margin-top:28px;
 }
 .logo{
-    width:490px;
+    width:520px;
     height:auto;
     display:block;
     margin-top:35px;
@@ -289,7 +289,7 @@ a{
     position:absolute;
     right:-390px;
     top:-80px;
-    width:600px;
+    width:620px;
     display:flex;
     justify-content:flex-end;
     align-items:flex-start;
@@ -297,7 +297,7 @@ a{
 
 .hero-visual img{
     width:100%;
-    max-width:600px;
+    max-width:620px;
     height:auto;
     display:block;
     object-fit:contain;
