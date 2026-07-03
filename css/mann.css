@@ -192,7 +192,7 @@ a{
     width:620px;
     max-width:620px;
     margin:0;
-    margin-left:-30px;
+    margin-left:-25px;
     padding:0;
     flex-shrink:0;
 }
@@ -287,8 +287,8 @@ a{
 
 .hero-visual{
     position:absolute;
-    right:-390px;
-    top:-100px;
+    right:-380px;
+    top:-110px;
     width:620px;
     display:flex;
     justify-content:flex-end;
