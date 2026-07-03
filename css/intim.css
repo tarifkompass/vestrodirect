@@ -229,8 +229,8 @@ a{
 .symptoms-intro{
     margin-top:20px;
     margin-bottom:12px;
-    color:var(--gold);
-    font-size:19px;
+    color:#D4AF37;
+    font-weight:400;
     font-weight:500;
     font-style:italic;
     line-height:1.5;
@@ -255,15 +255,15 @@ a{
 }
 
 .topic-item img{
-    width:32px;
-    height:32px;
+    width:28px;
+    height:28px;
     display:block;
 }
 
 .message-title{
     display:block;
-    color:var(--gold);
-    font-size:19px;
+    color:#D4AF37;
+    font-weight:400;
     font-weight:500;
     font-style:italic;
     line-height:1.5;
