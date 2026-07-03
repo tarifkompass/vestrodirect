@@ -229,8 +229,8 @@ a{
 .symptoms-intro{
     margin-top:20px;
     margin-bottom:12px;
-    color:#D4AF37;
-    font-weight:400;
+    color:#D4AF37 !important;
+    font-weight:300;
     font-weight:500;
     font-style:italic;
     line-height:1.5;
@@ -262,12 +262,12 @@ a{
 
 .message-title{
     display:block;
-    color:#D4AF37;
-    font-weight:400;
+    color:#D4AF37 !important;
+    font-weight:300;
     font-weight:500;
     font-style:italic;
     line-height:1.5;
-    margin-bottom:12px;
+    margin-bottom:20px;
 }
 
 .message-text{
