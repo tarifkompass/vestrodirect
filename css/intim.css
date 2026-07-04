@@ -1005,7 +1005,95 @@ margin:0 auto;
 .partner-button:hover img{
     transform:translateY(-2px) scale(1.03);
 }
+/* MYSTIM CARD */
 
+.partner-offer-card-mystim{
+    border-color:rgba(210,142,170,.62);
+    background:
+        radial-gradient(circle at 50% 18%, rgba(255,232,240,.85), transparent 42%),
+        linear-gradient(180deg,#fffafb 0%,#fff6f8 52%,#fffdf9 100%);
+}
+
+.partner-offer-card-mystim:hover{
+    border-color:#d28eaa;
+    box-shadow:
+        0 28px 58px rgba(54,54,73,.18),
+        0 4px 16px rgba(210,142,170,.18);
+}
+
+.mystim-logo-header{
+    background:
+        radial-gradient(circle at 50% 0%, rgba(255,255,255,.18), transparent 42%),
+        linear-gradient(180deg,#151515 0%,#2a2025 100%);
+    border-bottom:3px solid rgba(210,142,170,.75);
+}
+
+.mystim-logo{
+    max-width:150px;
+    max-height:54px;
+}
+
+.partner-offer-card-mystim .partner-card-text{
+    color:#211823;
+}
+
+.partner-offer-card-mystim .partner-divider:before,
+.partner-offer-card-mystim .partner-divider:after{
+    background:rgba(210,142,170,.45);
+}
+
+.partner-offer-card-mystim .partner-divider span{
+    border-color:rgba(210,142,170,.72);
+    box-shadow:0 0 0 4px rgba(210,142,170,.12);
+    color:#9b4e6c;
+}
+
+.partner-offer-card-mystim .partner-benefits li{
+    color:#24151f;
+}
+
+.partner-offer-card-mystim .partner-benefits li:not(:last-child){
+    border-right-color:rgba(210,142,170,.36);
+}
+
+.partner-offer-card-mystim .partner-benefits li:before{
+    border-color:#d28eaa;
+    box-shadow:0 0 0 5px rgba(210,142,170,.10);
+    color:#9b4e6c;
+}
+
+.mystim-trust-line{
+    color:#9b4e6c;
+}
+
+.partner-offer-card-mystim .partner-trust-line:before,
+.partner-offer-card-mystim .partner-trust-line:after{
+    border-top-color:rgba(210,142,170,.42);
+}
+
+.mystim-links-title{
+    color:#9b4e6c;
+}
+
+.partner-offer-card-mystim .partner-links-title:before,
+.partner-offer-card-mystim .partner-links-title:after{
+    border-top-color:rgba(210,142,170,.45);
+}
+
+.mystim-links a{
+    border-color:rgba(210,142,170,.65);
+    background:#fff7fa;
+    color:#191019;
+}
+
+.mystim-links a:hover{
+    border-color:#d28eaa;
+    background:#ffffff;
+}
+
+.mystim-button img{
+    width:155px;
+}
 /* EMPTY CARD */
 
 .partner-offer-card-empty{
