@@ -1103,10 +1103,14 @@ background:#ffffff;
 .partner-offer-card-orion{
     border-color:rgba(196,161,75,.56);
     background:
-        radial-gradient(circle at 50% 16%, rgba(214,238,255,.34), transparent 42%),
-        radial-gradient(circle at 18% 78%, rgba(120,180,220,.08), transparent 30%),
-        radial-gradient(circle at 82% 82%, rgba(120,180,220,.07), transparent 28%),
-        linear-gradient(180deg,#ffffff 0%, #fbfeff 55%, #f7fcff 100%);
+radial-gradient(circle at 50% 18%, rgba(212,236,255,.55), transparent 40%),
+radial-gradient(circle at 20% 82%, rgba(154,208,255,.12), transparent 28%),
+radial-gradient(circle at 82% 78%, rgba(154,208,255,.10), transparent 24%),
+linear-gradient(
+180deg,
+#ffffff 0%,
+#f8fcff 55%,
+#eef8ff 100%);
 }
 
 .partner-offer-card-orion:hover{
@@ -1125,18 +1129,17 @@ background:#ffffff;
 }
 
 .orion-logo{
-    max-width:128px;
-    max-height:46px;
+    max-width:112px;
+    max-height:40px;
 }
 
 .orion-claim{
-    max-width:105px;
-    max-height:46px;
-    object-fit:contain;
-    display:block;
+    max-width:82px;
+    max-height:36px;
+    opacity:.88;
 }
-
 .partner-offer-card-orion .partner-card-text{
+    max-width:520px;
     color:#121823;
 }
 
@@ -1206,6 +1209,9 @@ background:#ffffff;
     display:block;
     background:#ffffff;
     border-radius:999px;
+}
+.partner-offer-card-orion .partner-button{
+    margin-top:34px;
 }
 /* EMPTY CARD */
 
