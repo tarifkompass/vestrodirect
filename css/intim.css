@@ -824,29 +824,24 @@ a{
     justify-content:center;
     gap:12px;
     background:
-        radial-gradient(circle at 50% 0%, rgba(255,255,255,.22), transparent 42%),
-        linear-gradient(180deg,#ffffff 0%,#f8fbfc 100%);
+        radial-gradient(circle at 50% 18%, rgba(210,238,255,.65), transparent 42%),
+        linear-gradient(180deg,#ffffff 0%,#f6fcff 52%,#eaf7ff 100%);
     border-radius:24px 24px 0 0;
-    border-bottom:3px solid rgba(196,161,75,.75);
+    border-bottom:3px solid #d40046;
 }
 
 .orion-logo{
-    width:auto;
-    height:auto;
-    max-width:118px;
-    max-height:42px;
+    max-width:108px;
+    max-height:38px;
     object-fit:contain;
     display:block;
 }
 
 .orion-claim{
-    width:auto;
-    height:auto;
-    max-width:86px;
-    max-height:38px;
+    max-width:82px;
+    max-height:36px;
     object-fit:contain;
     display:block;
-    opacity:.88;
 }
 
 /* ==============================
@@ -1123,6 +1118,12 @@ a{
     .orion-button::after{
         display:none;
     }
+ .partner-offer-card-orion .partner-divider span,
+.partner-offer-card-orion .partner-benefits li::before,
+.orion-links a,
+.orion-button img{
+    background:#ffffff;
+}
 }
 
 /* ==================================================
