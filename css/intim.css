@@ -1823,5 +1823,25 @@ linear-gradient(
         font-size:13px;
         line-height:1.6;
     }
+/* ===========================================
+   FAQ / FOOTER FIX
+=========================================== */
 
+.faq-section,
+.site-footer{
+    display:block;
+    width:100%;
+    max-width:none;
+    clear:both;
+    grid-column:1 / -1;
+    flex:0 0 100%;
+}
+
+.faq-section .content-container,
+.site-footer .content-container{
+    width:100%;
+    max-width:1180px;
+    margin-left:auto;
+    margin-right:auto;
+}
 }
