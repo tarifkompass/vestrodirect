@@ -963,79 +963,105 @@ a{
 
 @media (max-width:768px){
 
+    html,
+    body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
     .hero{
+        width:100%;
         min-height:auto;
-        background-position:62% center;
+        overflow:hidden;
+        background-position:center top;
     }
 
     .topbar{
+        width:100%;
+        padding:20px 16px 12px;
+        display:flex;
+        flex-direction:column;
         align-items:center;
-        padding:20px 18px;
-        flex-wrap:wrap;
+        justify-content:center;
+        gap:14px;
     }
 
     .logo{
-        width:220px;
-        margin-top:0;
+        width:240px;
+        max-width:88vw;
+        margin:0 auto;
+        display:block;
+    }
+
+    .lang-buttons{
+        margin:0;
+        display:flex;
+        justify-content:center;
+    }
+
+    .lang-btn{
+        width:48px;
     }
 
     .main-navigation{
         width:100%;
-        order:3;
+        margin:6px 0 0;
+        display:flex;
         justify-content:center;
         gap:24px;
-        margin-top:18px;
+        order:3;
     }
 
     .main-navigation a{
-        font-size:18px;
-    }
-
-    .lang-buttons{
-        margin-top:0;
-        margin-left:auto;
-    }
-
-    .lang-btn{
-        width:58px;
-    }
-
-    .lang-control + .lang-control{
-        margin-left:-9px;
+        font-size:19px;
     }
 
     .hero-container{
+        width:100%;
         max-width:100%;
-        padding:16px 20px 86px;
+        padding:54px 18px 76px;
+        margin:0 auto;
         display:block;
+        box-sizing:border-box;
     }
 
     .hero-text{
         width:100%;
         max-width:100%;
+        margin:0 auto;
         text-align:center;
+        box-sizing:border-box;
     }
 
     .hero-label{
         font-size:11px;
-        letter-spacing:.14em;
+        letter-spacing:.16em;
     }
 
     .hero-text h1{
-        font-size:43px;
+        max-width:100%;
+        margin:18px auto 24px;
+        font-size:40px;
+        line-height:1.08;
+        text-align:center;
     }
 
     .hero-text p{
+        max-width:100%;
+        margin:0 auto 22px;
         font-size:18px;
         line-height:1.65;
+        text-align:center;
     }
 
     .hero-divider{
-        margin:24px auto 18px;
+        margin:28px auto 22px;
     }
 
     .hero-quote span{
-        font-size:23px;
+        font-size:22px;
+        line-height:1.35;
     }
 
     .hero-image{
@@ -1043,27 +1069,34 @@ a{
         right:auto;
         top:auto;
         width:100%;
-        max-width:340px;
+        max-width:320px;
         margin:34px auto 0;
+        display:flex;
         justify-content:center;
     }
 
     .hero-image img{
-        max-width:100%;
+        width:100%;
+        max-width:320px;
+        height:auto;
+        display:block;
     }
 
     .scroll-down{
-        bottom:24px;
+        bottom:22px;
     }
 
     .portal-sections,
     .editorial-section,
     .principles-section{
+        width:100%;
         padding:72px 20px;
+        box-sizing:border-box;
     }
 
     .section-title{
         margin-bottom:44px;
+        text-align:center;
     }
 
     .section-label{
@@ -1073,7 +1106,8 @@ a{
     }
 
     .section-title h2{
-        font-size:clamp(32px,9vw,44px);
+        font-size:clamp(34px,9vw,44px);
+        line-height:1.08;
     }
 
     .section-title p{
@@ -1085,11 +1119,21 @@ a{
     .editorial-grid,
     .principles-grid{
         grid-template-columns:1fr;
-        gap:20px;
+        gap:22px;
+        width:100%;
+        max-width:100%;
+    }
+
+    .portal-card,
+    .editorial-card,
+    .principle-card{
+        width:100%;
+        max-width:100%;
+        min-height:auto;
+        box-sizing:border-box;
     }
 
     .portal-card{
-        min-height:auto;
         padding:38px 26px 30px;
     }
 
@@ -1145,20 +1189,26 @@ a{
     }
 
     .site-footer{
+        width:100%;
         padding:52px 20px 34px;
+        box-sizing:border-box;
     }
 
-    .footer-nav{
+    .footer-links{
         flex-direction:column;
-        gap:18px;
+        align-items:center;
+        gap:54px;
     }
 
-    .footer-nav a{
-        font-size:23px;
+    .footer-link{
+        width:160px;
+    }
+
+    .footer-link span{
+        font-size:26px;
     }
 
     .footer-copy{
         margin-top:32px;
     }
-
 }
