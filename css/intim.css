@@ -1432,8 +1432,22 @@ a{
 
 @media (max-width:768px){
 
+    html,
+    body{
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
+    .hero,
+    .hero *{
+        box-sizing:border-box;
+    }
+
     .hero{
+        width:100%;
         min-height:auto;
+        overflow:hidden;
         background-position:62% center;
     }
 
@@ -1460,48 +1474,75 @@ a{
     }
 
     .hero-main{
+        width:100%;
         max-width:100%;
-        padding:0 20px 48px;
-        padding-left:20px;
-
+        padding:18px 20px 76px;
+        margin:0 auto;
         display:block !important;
+        box-sizing:border-box;
+        overflow:hidden;
     }
 
     .hero-content{
-        width:100%;
-        max-width:100%;
-
+        width:100% !important;
+        max-width:100% !important;
+        margin:0 auto;
+        padding:0;
         text-align:center;
+        transform:none !important;
     }
 
     .hero-kicker{
+        margin-top:0 !important;
+        margin-bottom:14px;
         font-size:11px;
-        letter-spacing:.12em;
+        letter-spacing:.16em;
+        text-align:center;
     }
 
     .hero-content h1{
-        font-size:43px;
+        width:100% !important;
+        max-width:100% !important;
+        margin:18px auto 24px;
+        font-size:40px;
+        line-height:1.08;
+        text-align:center;
+        transform:none !important;
     }
 
     .hero-content p{
+        width:100% !important;
+        max-width:100% !important;
+        margin:0 auto 22px;
         font-size:18px;
+        line-height:1.65;
+        text-align:center;
+        transform:none !important;
     }
 
     .symptoms-intro{
         font-size:18px;
+        line-height:1.65;
     }
 
     .hero-topics{
-        align-items:center;
+        align-items:flex-start;
+        width:max-content;
+        max-width:100%;
+        margin:0 auto;
     }
 
     .topic-item{
+        justify-content:flex-start;
+        text-align:left;
+        width:100%;
         font-size:18px;
     }
 
     .topic-item img{
         width:34px;
         height:34px;
+        flex-shrink:0;
     }
 
     .hero-message{
@@ -1513,17 +1554,17 @@ a{
         position:relative;
         right:auto;
         top:auto;
-
         width:100%;
         max-width:320px;
-
-        margin:28px auto 0;
-
+        margin:34px auto 0;
         justify-content:center;
     }
 
     .hero-visual img{
-        max-width:100%;
+        width:100%;
+        max-width:320px;
+        height:auto;
+        display:block;
     }
 
     .boost-button{
@@ -1533,40 +1574,49 @@ a{
     .light-section,
     .medical-about-section,
     .vestro-help-section{
-        padding:70px 20px;
+        width:100%;
+        padding:54px 20px;
+        box-sizing:border-box;
     }
 
     .section-heading,
     .center-heading{
-        margin-bottom:40px;
+        margin-bottom:30px;
+        text-align:center;
     }
 
     .section-kicker{
         margin-bottom:18px;
-
         font-size:12px;
-        letter-spacing:.13em;
+        letter-spacing:.14em;
     }
 
     .section-heading h2,
     .center-heading h2{
-        font-size:clamp(31px,9vw,42px);
+        font-size:clamp(34px,9vw,44px);
+        line-height:1.08;
     }
 
     .heading-description,
     .medical-about-text p,
     .vestro-help-text p{
-        font-size:16px;
+        font-size:17px;
         line-height:1.65;
     }
 
     .medical-card-grid{
         grid-template-columns:1fr;
+        gap:22px;
+        width:100%;
+        max-width:100%;
     }
 
     .medical-card{
+        width:100%;
+        max-width:100%;
         min-height:auto;
-        padding:30px 24px;
+        padding:34px 26px;
+        box-sizing:border-box;
     }
 
     .medical-icon-box{
@@ -1580,12 +1630,13 @@ a{
     }
 
     .faq-section{
-        padding:70px 20px;
+        width:100%;
+        padding:54px 20px;
+        box-sizing:border-box;
     }
 
     .faq-section .section-badge{
         gap:10px;
-
         font-size:13px;
     }
 
@@ -1595,7 +1646,7 @@ a{
     }
 
     .faq-section h2{
-        margin-bottom:40px;
+        margin-bottom:30px;
     }
 
     .faq-list{
@@ -1605,7 +1656,6 @@ a{
     .faq-item summary{
         padding:20px;
         padding-right:54px;
-
         font-size:18px;
     }
 
@@ -1616,43 +1666,43 @@ a{
 
     .faq-item p{
         padding:0 20px 20px;
-
         font-size:16px;
     }
 
     .site-footer{
-        padding:56px 20px 34px;
+        width:100%;
+        padding:52px 20px 34px;
+        box-sizing:border-box;
     }
 
     .footer-links{
-        flex-direction:column;
-        align-items:center;
-
-        gap:42px;
+        flex-direction:row;
+        justify-content:center;
+        align-items:flex-start;
+        gap:22px;
     }
 
     .footer-link{
-        width:180px;
+        width:92px;
     }
 
     .footer-link img{
-        width:72px;
-        height:72px;
-
-        margin-bottom:14px;
+        width:38px;
+        height:38px;
     }
 
     .footer-link span{
-        font-size:24px;
+        font-size:18px;
     }
 
     .footer-link::after{
-        width:76px;
-        margin-top:14px;
+        width:52px;
+        height:2px;
+        margin-top:10px;
     }
 
     .footer-copy{
-        margin-top:34px;
+        margin-top:32px;
     }
 
     .footer-copy p:first-child{
