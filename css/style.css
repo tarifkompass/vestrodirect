@@ -1022,14 +1022,14 @@ a{
         font-size:19px;
     }
 
-    .hero-container{
-        width:100%;
-        max-width:100%;
-        padding:54px 18px 76px;
-        margin:0 auto;
-        display:block;
-        box-sizing:border-box;
-    }
+   .hero-container{
+    width:100%;
+    max-width:100%;
+    padding:18px 18px 76px;
+    margin:0 auto;
+    display:block;
+    box-sizing:border-box;
+}
 
     .hero-text{
         width:100%;
