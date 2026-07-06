@@ -999,7 +999,7 @@ a{
     display:flex;
     justify-content:center;
     align-items:center;
-    gap:8px;
+    gap:12px;
 }
 
     .lang-btn{
@@ -1030,20 +1030,19 @@ a{
     display:block;
     box-sizing:border-box;
 }
+.hero-text{
+    width:100% !important;
+    max-width:100% !important;
+    margin:0 auto;
+    padding:0;
+    text-align:center;
+    transform:none !important;
+}
 
-    .hero-text{
-        width:100%;
-        max-width:100%;
-        margin:0 auto;
-        text-align:center;
-        box-sizing:border-box;
-    }
-
-    .hero-label{
-        font-size:11px;
-        letter-spacing:.16em;
-    }
-
+.hero-label{
+    margin-top:0 !important;
+    margin-bottom:14px;
+}
     .hero-text h1{
         max-width:100%;
         margin:18px auto 24px;
