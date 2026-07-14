@@ -1033,13 +1033,37 @@ margin:0 auto;
 }
 /* DOKTORABC CARD */
 
+.partner-offer-card-doktorabc{
+
+    background:
+        radial-gradient(circle at 50% 100%,rgba(116,180,104,.08),rgba(116,180,104,0) 40%),
+        linear-gradient(180deg,#f4fbf3 0%,#fcfffc 100%);
+
+}
+
+.partner-offer-card-doktorabc .partner-logo-header{
+
+    background:#ffffff;
+    border-bottom:3px solid rgba(196,161,75,.72);
+
+}
+
 .partner-offer-card-doktorabc .doktorabc-logo{
+
     width:auto;
     height:auto;
     max-width:235px;
     max-height:56px;
     object-fit:contain;
     display:block;
+
+}
+
+.partner-offer-card-doktorabc .partner-benefits li::before,
+.partner-offer-card-doktorabc .partner-links a{
+
+    background:#ffffff;
+
 }
 /* MOBILE */
 
