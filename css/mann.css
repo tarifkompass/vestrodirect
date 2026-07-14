@@ -1031,7 +1031,16 @@ margin:0 auto;
     font-size:28px;
     font-weight:700;
 }
+/* DOKTORABC CARD */
 
+.partner-offer-card-doktorabc .doktorabc-logo{
+    width:auto;
+    height:auto;
+    max-width:235px;
+    max-height:56px;
+    object-fit:contain;
+    display:block;
+}
 /* MOBILE */
 
 @media (max-width:900px){
