@@ -745,10 +745,10 @@ a{
     border:1px solid rgba(196,161,75,.56);
     border-radius:24px;
     background:
-        radial-gradient(circle at 50% 18%, rgba(255,248,230,.62), transparent 42%),
-        radial-gradient(circle at 18% 78%, rgba(196,161,75,.08), transparent 30%),
-        radial-gradient(circle at 82% 82%, rgba(196,161,75,.07), transparent 28%),
-        linear-gradient(180deg,#ffffff 0%, #fffdf7 52%, #fffaf0 100%);
+    radial-gradient(circle at 50% 18%, rgba(255,235,244,.68), transparent 42%),
+    radial-gradient(circle at 18% 76%, rgba(236,196,214,.10), transparent 30%),
+    radial-gradient(circle at 82% 82%, rgba(236,196,214,.09), transparent 28%),
+    linear-gradient(180deg,#fffafd 0%, #fff7fb 52%, #fff3f8 100%);
     box-shadow:
         0 22px 48px rgba(36,54,73,.14),
         inset 0 1px 0 rgba(255,255,255,.95);
