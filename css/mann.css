@@ -287,7 +287,7 @@ a{
 
 .hero-visual{
     position:absolute;
-    right:-420px;
+    right:-3600px;
     top:-110px;
     width:620px;
     display:flex;
@@ -301,7 +301,7 @@ a{
     height:auto;
     display:block;
     object-fit:contain;
-    transform:translateY(0);
+    transform:translateX(30px);
 }
 
 
