@@ -922,11 +922,15 @@ document.addEventListener('click', function(event) {
 
     if (!link) return;
 
-   const partnerCard = link.closest(
-    '.partner-offer-card-mystim, .partner-offer-card-orion'
+  const partnerArea = link.closest(
+    '.partner-offer-card-mystim, .partner-offer-card-orion, .mystim-links, .orion-links'
 );
 
-    if (!partnerCard) return;
+if (!partnerArea) return;
+
+const partnerCard =
+    link.closest('.partner-offer-card-mystim, .partner-offer-card-orion') ||
+    partnerArea;
 
     let partnerName = 'unknown_partner';
 
