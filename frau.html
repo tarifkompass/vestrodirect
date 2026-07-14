@@ -814,27 +814,47 @@ languageButtons.forEach((button)=>{
 setLanguage("de");
 
 </script>
-
 <script>
 document.addEventListener('click', function(event) {
-    var link = event.target.closest('a');
+    const link = event.target.closest('a');
 
     if (!link) return;
 
-    var isAffiliateLink =
-        link.closest('.partner-links') ||
-        link.classList.contains('partner-button');
+    const partnerCard = link.closest(
+    '.partner-offer-card, .partner-links'
+);
 
-    if (!isAffiliateLink) return;
+    if (!partnerCard) return;
+
+    let partnerName = 'unknown_partner';
+
+    const heading = partnerCard.querySelector(
+        'h2, h3, h4, .partner-title, .partner-name'
+    );
+
+    const logo = partnerCard.querySelector('img[alt]');
+
+    if (heading && heading.innerText.trim()) {
+        partnerName = heading.innerText.trim();
+    } else if (logo && logo.alt.trim()) {
+        partnerName = logo.alt.trim();
+    }
 
     if (typeof gtag === 'function') {
-        gtag('event', 'affiliate_click', {
-            link_text: link.innerText.trim() || link.querySelector('img')?.alt || 'affiliate_link',
+        gtag('event', 'vestro_partner_click', {
+            partner_name: partnerName,
+            link_text:
+                link.innerText.trim() ||
+                link.getAttribute('aria-label') ||
+                link.querySelector('img')?.alt ||
+                'partner_link',
             link_url: link.href,
-            page_path: window.location.pathname
+            page_path: window.location.pathname,
+            page_title: document.title,
+            transport_type: 'beacon'
         });
     }
-});
+}, true);
 </script>
 
 </body>
