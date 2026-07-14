@@ -1006,7 +1006,12 @@ margin:0 auto;
 .partner-button:hover img{
     transform:translateY(-2px) scale(1.03);
 }
-
+}
+.partner-offer-card-euroclinix .partner-button img,
+.partner-offer-card-doktorabc .partner-button img{
+    background:#ffffff;
+    border-radius:999px;
+}
 /* EMPTY CARD */
 
 .partner-offer-card-empty{
@@ -1030,6 +1035,14 @@ margin:0 auto;
     font-family:"Times New Roman",serif;
     font-size:28px;
     font-weight:700;
+}
+/* EUROCLINIX */
+
+.partner-offer-card-euroclinix .partner-links a,
+.partner-offer-card-euroclinix .partner-benefits li::before{
+
+    background:#ffffff;
+
 }
 /* DOKTORABC CARD */
 
@@ -1063,8 +1076,13 @@ margin:0 auto;
 .partner-offer-card-doktorabc .partner-links a{
 
     background:#ffffff;
-
+.partner-offer-card-euroclinix .partner-links a,
+.partner-offer-card-euroclinix .partner-benefits li::before,
+.partner-offer-card-doktorabc .partner-links a,
+.partner-offer-card-doktorabc .partner-benefits li::before{
+    background:#ffffff;
 }
+
 /* MOBILE */
 
 @media (max-width:900px){
