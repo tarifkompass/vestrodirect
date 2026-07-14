@@ -917,52 +917,50 @@ Persönlich. Diskret. Direkt.
 <script src="js/language.js"></script>
 
 <script>
-document.addEventListener('click', function(event) {
-    const link = event.target.closest('a');
+document.addEventListener('DOMContentLoaded', function() {
 
-    if (!link) return;
-
-  const partnerArea = link.closest(
-    '.partner-offer-card-mystim, .partner-offer-card-orion, .mystim-links, .orion-links'
-);
-
-if (!partnerArea) return;
-
-const partnerCard =
-    link.closest('.partner-offer-card-mystim, .partner-offer-card-orion') ||
-    partnerArea;
-
-    let partnerName = 'unknown_partner';
-
-    const heading = partnerCard.querySelector(
-        'h2, h3, h4, .partner-title, .partner-name'
+    const partnerLinks = document.querySelectorAll(
+        'article.partner-offer-card-mystim a, article.partner-offer-card-orion a'
     );
 
-    const logo = partnerCard.querySelector('img[alt]');
+    partnerLinks.forEach(function(link) {
 
-    if (heading && heading.innerText.trim()) {
-        partnerName = heading.innerText.trim();
-    } else if (logo && logo.alt.trim()) {
-        partnerName = logo.alt.trim();
-    }
+        link.addEventListener('click', function() {
 
-    if (typeof gtag === 'function') {
-        gtag('event', 'vestro_partner_click', {
-            partner_name: partnerName,
-            link_text:
-                link.innerText.trim() ||
-                link.getAttribute('aria-label') ||
-                link.querySelector('img')?.alt ||
-                'partner_link',
-            link_url: link.href,
-            page_path: window.location.pathname,
-            page_title: document.title,
-            transport_type: 'beacon'
+            const card = link.closest(
+                'article.partner-offer-card-mystim, article.partner-offer-card-orion'
+            );
+
+            let partnerName = 'unknown_partner';
+
+            if (card.classList.contains('partner-offer-card-mystim')) {
+                partnerName = 'Mystim';
+            }
+
+            if (card.classList.contains('partner-offer-card-orion')) {
+                partnerName = 'Orion';
+            }
+
+            if (typeof gtag === 'function') {
+                gtag('event', 'vestro_partner_click', {
+                    partner_name: partnerName,
+                    link_text:
+                        link.innerText.trim() ||
+                        link.querySelector('img')?.alt ||
+                        'partner_link',
+                    link_url: link.href,
+                    page_path: window.location.pathname,
+                    page_title: document.title,
+                    transport_type: 'beacon'
+                });
+            }
+
         });
-    }
-}, true);
-</script>
 
+    });
+
+});
+</script>
 </body>
 
 </html>
