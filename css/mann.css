@@ -690,9 +690,9 @@ a{
 }
 
 .partner-offers-section .section-heading{
-    text-align:center;
     max-width:860px;
     margin:0 auto;
+    text-align:center;
 }
 
 .partner-offers-section .section-badge{
@@ -730,34 +730,52 @@ a{
     margin-top:36px;
 }
 
-/* CARD */
+/* ==============================
+   COMMON CARD
+============================== */
 
 .partner-offer-card{
     min-height:560px;
     padding:0;
     overflow:hidden;
+
+    display:flex;
+    flex-direction:column;
+
     border:1px solid rgba(196,161,75,.56);
     border-radius:24px;
+
     background:
-        radial-gradient(circle at 50% 100%,rgba(196,161,75,.10),rgba(196,161,75,0) 38%),
-        linear-gradient(180deg,#ffffff 0%,#fffdf8 100%);
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(196,161,75,.10),
+            rgba(196,161,75,0) 38%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #fffdf8 100%
+        );
+
     box-shadow:
         0 22px 48px rgba(36,54,73,.14),
         inset 0 1px 0 rgba(255,255,255,.95);
+
     transition:.25s ease;
-   display:flex;
-   flex-direction:column;
 }
 
 .partner-offer-card:hover{
     transform:translateY(-4px);
     border-color:#c49f37;
+
     box-shadow:
         0 28px 58px rgba(36,54,73,.18),
         0 4px 14px rgba(184,138,24,.12);
 }
 
-/* HEADER */
+/* ==============================
+   COMMON HEADER
+============================== */
 
 .partner-logo-wrap{
     margin:0;
@@ -765,14 +783,26 @@ a{
 
 .partner-logo-header{
     height:96px;
+
     display:flex;
     align-items:center;
     justify-content:center;
-    background:
-        radial-gradient(circle at 50% 0%,rgba(255,255,255,.18),transparent 44%),
-        linear-gradient(180deg,#0d376f 0%,#17457f 55%,#244f8f 100%);
+
     border-radius:24px 24px 0 0;
     border-bottom:3px solid rgba(196,161,75,.72);
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(255,255,255,.18),
+            transparent 44%
+        ),
+        linear-gradient(
+            180deg,
+            #0d376f 0%,
+            #17457f 55%,
+            #244f8f 100%
+        );
 }
 
 .partner-logo{
@@ -780,40 +810,50 @@ a{
     height:auto;
     max-width:235px;
     max-height:56px;
-    object-fit:contain;
+
     display:block;
+    object-fit:contain;
 }
 
-/* BODY */
+/* ==============================
+   COMMON BODY
+============================== */
 
 .partner-card-body{
     padding:22px 24px 18px;
     text-align:center;
-  }
+}
 
 .partner-card-text{
     max-width:460px;
     margin:0 auto 14px;
+
     color:#16233b;
+
     font-size:16px;
     font-weight:700;
     line-height:1.55;
 }
 
-/* DIVIDER */
+/* ==============================
+   COMMON DIVIDER
+============================== */
 
 .partner-divider{
     display:flex;
     align-items:center;
     justify-content:center;
+
     margin:4px 0 14px;
 }
 
 .partner-divider::before,
 .partner-divider::after{
     content:"";
+
     flex:1;
     height:1px;
+
     background:rgba(196,161,75,.42);
 }
 
@@ -821,34 +861,46 @@ a{
     width:26px;
     height:26px;
     margin:0 10px;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     border:1px solid rgba(196,161,75,.65);
     border-radius:50%;
-    background:#fff;
+
+    background:#ffffff;
     color:#c49a2c;
+
     font-size:15px;
     font-weight:700;
 }
 
-/* BENEFITS AS ICON TILES */
+/* ==============================
+   COMMON BENEFITS
+============================== */
 
 .partner-benefits{
     display:grid;
     grid-template-columns:repeat(4,1fr);
     gap:0;
-    list-style:none;
-    padding:0;
+
     margin:0 0 22px;
+    padding:0;
+
+    list-style:none;
 }
 
 .partner-benefits li{
     position:relative;
-    list-style:none;
-    padding:42px 8px 0;
+
     margin:0;
+    padding:42px 8px 0;
+
+    list-style:none;
+
     color:#050505;
+
     font-family:"Times New Roman",serif;
     font-size:13px;
     font-weight:700;
@@ -862,47 +914,55 @@ a{
 
 .partner-benefits li::before{
     content:"✓";
+
     position:absolute;
-    left:50%;
     top:0;
-    transform:translateX(-50%);
+    left:50%;
+
     width:32px;
     height:32px;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
+    transform:translateX(-50%);
+
     border:1.5px solid #c49a2c;
     border-radius:50%;
-    background:#fff;
+
+    background:#ffffff;
     color:#b88716;
+
     font-family:Arial,sans-serif;
     font-size:18px;
     font-weight:800;
 }
 
-/* TRUST LINE */
+/* ==============================
+   COMMON TRUST LINE
+============================== */
 
 .partner-trust-line{
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     gap:10px;
 
-    margin:18px 0 18px;
+    margin:18px 0;
 
-    color:#A87B18;
+    color:#a87b18;
 
     font-size:14px;
-
     font-weight:600;
 }
 
 .partner-trust-line::before,
 .partner-trust-line::after{
     content:"";
+
     flex:1;
+
     border-top:1px dotted rgba(196,161,75,.48);
 }
 
@@ -911,15 +971,20 @@ a{
     margin-left:8px;
 }
 
-/* LINKS */
+/* ==============================
+   COMMON LINKS
+============================== */
 
 .partner-links-title{
     display:flex;
     align-items:center;
     justify-content:center;
     gap:14px;
+
     margin:0 0 24px;
+
     color:#8c6a12;
+
     font-family:"Times New Roman",serif;
     font-size:18px;
     font-weight:700;
@@ -931,156 +996,194 @@ a{
 .partner-links-title::before,
 .partner-links-title::after{
     content:"";
+
     width:86px;
+
     border-top:1px dotted rgba(196,161,75,.45);
 }
 
 .partner-links{
+    max-width:100%;
+    margin:0 auto;
+
     display:flex;
-flex-wrap:wrap;
-justify-content:center;
-align-items:center;
-gap:10px;
-max-width:100%;
-margin:0 auto;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
 }
 
 .partner-links a{
     display:inline-flex;
     align-items:center;
     justify-content:center;
+
     padding:7px 10px;
+
     border:1px solid rgba(196,161,75,.48);
     border-radius:999px;
-    background:#fffdf8;
+
+    background:#ffffff;
     color:#050b14;
+
     font-size:12.5px;
     font-weight:700;
     line-height:1.15;
     text-decoration:none;
-    transition:.2s ease;
     white-space:nowrap;
+
+    transition:.2s ease;
 }
 
 .partner-links a:hover{
     transform:translateY(-2px);
-    background:#fff6dd;
+
     border-color:#c49f37;
+    background:#fff6dd;
 }
 
-/* BUTTON */
+/* ==============================
+   COMMON BUTTON
+============================== */
 
 .partner-button{
     display:flex;
     justify-content:center;
+
     margin-top:28px;
     padding:0 0 26px;
-    background:none;
+
     border:none;
+    background:none;
     box-shadow:none;
+
     text-decoration:none;
 }
 
 .partner-button::before,
 .partner-button::after{
     content:"";
+
     width:92px;
-    align-self:center;
-    border-top:1px dotted rgba(196,161,75,.45);
     margin:0 16px;
+
+    align-self:center;
+
+    border-top:1px dotted rgba(196,161,75,.45);
 }
 
 .partner-button img{
     width:155px;
     height:auto;
+
     display:block;
+
+    border-radius:999px;
+    background:#ffffff;
+
     transition:.25s ease;
 }
 
 .partner-button:hover{
-    background:none;
     border:none;
+    background:none;
     box-shadow:none;
 }
 
 .partner-button:hover img{
     transform:translateY(-2px) scale(1.03);
 }
+
+/* ==============================
+   EUROCLINIX CARD
+   Uses the common card design
+============================== */
+
+.partner-offer-card-euroclinix{
+    background:
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(196,161,75,.10),
+            rgba(196,161,75,0) 38%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #fffdf8 100%
+        );
 }
-.partner-offer-card-euroclinix .partner-button img,
-.partner-offer-card-doktorabc .partner-button img{
+
+/* ==============================
+   DOKTORABC CARD
+============================== */
+
+.partner-offer-card-doktorabc{
+    background:
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(116,180,104,.08),
+            rgba(116,180,104,0) 40%
+        ),
+        linear-gradient(
+            180deg,
+            #f4fbf3 0%,
+            #fcfffc 100%
+        );
+}
+
+.partner-offer-card-doktorabc .partner-logo-header{
+    border-bottom:3px solid rgba(196,161,75,.72);
     background:#ffffff;
-    border-radius:999px;
 }
-/* EMPTY CARD */
+
+.partner-offer-card-doktorabc .doktorabc-logo{
+    width:auto;
+    height:auto;
+    max-width:235px;
+    max-height:56px;
+
+    display:block;
+    object-fit:contain;
+}
+
+/* ==============================
+   EMPTY CARD
+============================== */
 
 .partner-offer-card-empty{
     display:flex;
     align-items:center;
     justify-content:center;
+
     background:
-        radial-gradient(circle at 50% 100%,rgba(196,161,75,.08),rgba(196,161,75,0) 42%),
-        linear-gradient(180deg,#ffffff 0%,#fffdf8 100%);
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(196,161,75,.08),
+            rgba(196,161,75,0) 42%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #fffdf8 100%
+        );
 }
 
 .empty-offer-inner{
     width:86%;
     min-height:170px;
+
     display:flex;
     align-items:center;
     justify-content:center;
+
     border:1px dashed rgba(190,161,75,.45);
     border-radius:18px;
+
     color:rgba(20,30,44,.55);
+
     font-family:"Times New Roman",serif;
     font-size:28px;
     font-weight:700;
-}
-/* EUROCLINIX */
-
-.partner-offer-card-euroclinix .partner-links a,
-.partner-offer-card-euroclinix .partner-benefits li::before{
-
-    background:#ffffff;
-
-}
-/* DOKTORABC CARD */
-
-.partner-offer-card-doktorabc{
-
-    background:
-        radial-gradient(circle at 50% 100%,rgba(116,180,104,.08),rgba(116,180,104,0) 40%),
-        linear-gradient(180deg,#f4fbf3 0%,#fcfffc 100%);
-
-}
-
-.partner-offer-card-doktorabc .partner-logo-header{
-
-    background:#ffffff;
-    border-bottom:3px solid rgba(196,161,75,.72);
-
-}
-
-.partner-offer-card-doktorabc .doktorabc-logo{
-
-    width:auto;
-    height:auto;
-    max-width:235px;
-    max-height:56px;
-    object-fit:contain;
-    display:block;
-
-}
-
-.partner-offer-card-doktorabc .partner-benefits li::before,
-.partner-offer-card-doktorabc .partner-links a{
-
-    background:#ffffff;
-.partner-offer-card-euroclinix .partner-links a,
-.partner-offer-card-euroclinix .partner-benefits li::before,
-.partner-offer-card-doktorabc .partner-links a,
-.partner-offer-card-doktorabc .partner-benefits li::before{
-    background:#ffffff;
 }
 
 /* MOBILE */
