@@ -1356,7 +1356,30 @@ a{
     line-height:1.65;
 
 }
+.next-step-content .next-step-button{
+    display:inline-block;
+    margin-top:6px;
 
+    color:#b88928;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:28px;
+    font-weight:700;
+    line-height:1.2;
+
+    text-decoration:none;
+
+    transition:.25s ease;
+}
+
+.next-step-content .next-step-button:hover{
+    color:#9d731c;
+    transform:translateX(4px);
+}
 .next-step-link{
 
     display:inline-block;
