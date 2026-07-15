@@ -1177,6 +1177,38 @@ a{
     object-fit:contain;
 }
 /* ==============================
+   SEEMENOPAUSE CARD
+============================== */
+
+.partner-offer-card-seemenopause{
+    background:
+        radial-gradient(
+            circle at 50% 100%,
+            rgba(242,183,201,.14),
+            rgba(242,183,201,0) 40%
+        ),
+        linear-gradient(
+            180deg,
+            #fff8fa 0%,
+            #fff0f4 100%
+        );
+}
+
+.partner-offer-card-seemenopause .partner-logo-header{
+    border-bottom:3px solid rgba(196,161,75,.72);
+    background:#ffffff;
+}
+
+.partner-offer-card-seemenopause .seemenopause-logo{
+    width:auto;
+    height:auto;
+    max-width:235px;
+    max-height:56px;
+
+    display:block;
+    object-fit:contain;
+}
+/* ==============================
    EMPTY CARD
 ============================== */
 
