@@ -1359,11 +1359,22 @@ a{
 
 .next-step-link{
 
-    color:#7b4bb3;
+    display:inline-block;
 
-    font-size:24px;
+    margin-top:6px;
+
+    color:#b88928;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:30px;
 
     font-weight:700;
+
+    line-height:1.2;
 
     text-decoration:none;
 
@@ -1373,9 +1384,11 @@ a{
 
 .next-step-link:hover{
 
-    color:#5e3790;
+    color:#9d731c;
 
-    text-decoration:underline;
+    text-decoration:none;
+
+    transform:translateX(4px);
 
 }
 /* ==================================================
