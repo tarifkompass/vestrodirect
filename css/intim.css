@@ -1126,7 +1126,7 @@ a{
 ================================================== */
 
 .health-directions-section{
-    padding:56px 0 20px;
+    padding:56px 0 64px;
 }
 
 .health-directions-heading{
@@ -1139,8 +1139,7 @@ a{
     display:block;
     margin-bottom:14px;
 
-    color:var(--gold);
-
+    color:#b88928;
     font-size:14px;
     font-weight:700;
     line-height:1.2;
