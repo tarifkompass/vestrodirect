@@ -84,23 +84,22 @@ a{
 ================================================== */
 
 .hero{
+
     position:relative;
     min-height:930px;
     overflow:hidden;
-    color:#ffffff;
-    background:
-        linear-gradient(
-            90deg,
-            rgba(5,23,52,.72) 0%,
-            rgba(5,23,52,.48) 43%,
-            rgba(5,23,52,.12) 100%
-        ),
-        url("../images/vestro_hero_luxury_navy_gold.webp");
-    background-size:cover;
-    background-position:center 58%;
-    background-repeat:no-repeat;
-}
 
+    color:var(--navy-text);
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #f7f2e8 0%,
+            #f2eadc 100%
+        );
+
+}
 .topbar{
     width:100%;
     display:flex;
