@@ -137,7 +137,7 @@ a{
     width:440px;
     height:auto;
     display:block;
-    margin-top:46px;
+    margin-top:24px;
 }
 
 /* ==================================================
@@ -330,7 +330,7 @@ a{
     position:absolute;
    z-index:2;
     right:-40px;
-    top:50px;
+    top:92px;
     width:840px;
     display:flex;
     justify-content:flex-end;
