@@ -1,7 +1,3 @@
-/* ==================================================
-   01 RESET
-================================================== */
-
 *{
     margin:0;
     padding:0;
@@ -265,7 +261,7 @@ a{
 
 .hero-label{
     display:block;
-   margin-top:55px;
+   margin-top:70px;
     margin-bottom:18px;
    color:#c28a18;
     font-size:18px;
@@ -330,7 +326,7 @@ a{
     position:absolute;
    z-index:2;
     right:-40px;
-    top:120px;
+    top:140px;
     width:840px;
     display:flex;
     justify-content:flex-end;
