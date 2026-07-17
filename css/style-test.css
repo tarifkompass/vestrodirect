@@ -1039,7 +1039,7 @@ a{
 }
 
     .lang-btn{
-        width:86px;
+        width:90px;
     }
 
    .lang-control{
@@ -1057,6 +1057,7 @@ a{
 .main-navigation a{
     color:#c28a18;
     font-size:19px;
+    letter-spacing:.02em;
 }
 .main-navigation a:hover{
     color:#c28a18;
@@ -1086,7 +1087,7 @@ a{
         max-width:100%;
         margin:18px auto 24px;
         font-size:40px;
-        line-height:1.08;
+        line-height:1.0;
         text-align:center;
     }
 
