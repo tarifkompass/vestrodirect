@@ -1689,23 +1689,24 @@ a{
     /* ==================================================
        HERO / MOBILE
     ================================================== */
-
     .hero{
         width:100%;
         min-height:auto;
         overflow:hidden;
+
         background:
             linear-gradient(
                 180deg,
                 #071d3a 0,
-                #071d3a 235px,
-                #f4eee3 235px,
+                #071d3a 215px,
+                #f4eee3 215px,
                 #fbf8f2 100%
             );
     }
 
     .hero::after{
-        height:235px;
+        height:215px;
+
         background:
             radial-gradient(
                 circle at 88% 6%,
@@ -1719,78 +1720,109 @@ a{
             );
     }
 
-  .topbar{
-    width:100%;
-    min-height:215px;
 
-    display:grid;
-    grid-template-columns:1fr auto;
-    grid-template-areas:
-        "logo languages"
-        "logo back";
+    /* ==================================================
+       MOBILE HEADER — КАК У MANN
+    ================================================== */
 
-    align-items:start;
+    .topbar{
+        width:100%;
+        min-height:auto;
 
-    padding:22px 14px 18px 18px;
-}
+        padding:20px 16px 12px;
 
-.logo{
-    grid-area:logo;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
 
-    width:225px;
-    max-width:60%;
-    height:auto;
+        gap:14px;
+    }
 
-    margin:14px 0 0;
+    .logo{
+        width:240px;
+        max-width:88vw;
+        height:auto;
 
-    justify-self:start;
-}
+        display:block;
 
-.header-actions{
-    display:contents;
-}
+        margin:0 auto;
+    }
 
-.lang-buttons{
-    grid-area:languages;
+    .header-actions{
+        width:100%;
 
-    display:flex;
-    align-items:center;
-    justify-content:flex-end;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
 
-    gap:0;
-    margin:0;
+        margin:0;
+    }
 
-    justify-self:end;
-}
+    .lang-buttons{
+        display:flex;
+        align-items:center;
+        justify-content:center;
 
-.lang-btn{
-    width:62px;
-}
+        gap:14px;
+        margin:0;
+    }
 
-.lang-control + .lang-control{
-    margin-left:-10px;
-}
+    .lang-control{
+        margin:0;
+    }
 
-.back-home{
-    grid-area:back;
+    .lang-control + .lang-control{
+        margin-left:0;
+    }
 
-    margin-top:10px;
-    margin-right:8px;
+    .lang-btn{
+        width:90px;
+        height:auto;
+    }
 
-    justify-self:end;
+    .back-home{
+        position:static;
+        top:auto;
 
-    font-size:13px;
-    white-space:nowrap;
-}
-    .hero-main{
+        display:block;
+
+        margin:6px 0 0;
+
+        color:#d4af37;
+
+        font-family:
+            Georgia,
+            "Times New Roman",
+            serif;
+
+        font-size:15px;
+        font-weight:600;
+        line-height:1.2;
+
+        text-align:center;
+        text-decoration:none;
+
+        transform:none;
+    }
+
+    .back-home:hover{
+        color:#f3d67a;
+        transform:none;
+    }
+        .hero-main{
         width:100%;
         max-width:100%;
         min-height:auto;
-        margin:0;
-        padding:0 20px 54px;
+
+        margin:0 auto;
+        padding:18px 20px 54px;
+
         display:flex !important;
         flex-direction:column;
         align-items:center;
+
         gap:0;
         overflow:hidden;
     }
@@ -1803,14 +1835,18 @@ a{
         text-align:center;
     }
 
-    .hero-kicker{
+       .hero-kicker{
         width:100%;
+
         margin:0 auto 16px;
+
         color:var(--gold-dark);
+
         font-size:11px;
         font-weight:700;
         line-height:1.45;
         letter-spacing:.15em;
+
         text-align:center;
     }
 
