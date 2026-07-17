@@ -195,7 +195,10 @@ a{
 }
 
 .back-home{
-    margin-top:42px;
+    position:relative;
+    top:20px;
+
+    margin-top:28px;
     margin-right:0;
 
     justify-self:end;
