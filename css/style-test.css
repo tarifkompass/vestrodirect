@@ -1114,7 +1114,7 @@ a{
         top:auto;
         width:100%;
         max-width:320px;
-        margin:34px auto 0;
+        margin:60px auto 0;
         display:flex;
         justify-content:center;
     }
@@ -1124,10 +1124,6 @@ a{
         max-width:320px;
         height:auto;
         display:block;
-    }
-
-    .scroll-down{
-        bottom:22px;
     }
 
    .portal-sections,
