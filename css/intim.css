@@ -1705,7 +1705,7 @@ a{
 }
 
     .hero::after{
-        height:250px;
+        height:235px;
 
         background:
             radial-gradient(
