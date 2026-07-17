@@ -196,9 +196,8 @@ a{
     color:#f3d67a;
     transform:translateX(-3px);
 }
-
 /* ==================================================
-   05 HERO CONTENT / DESKTOP
+   05 HERO CONTENT + IMAGE / DESKTOP
 ================================================== */
 
 .hero-main{
@@ -206,20 +205,23 @@ a{
     z-index:3;
 
     width:min(1180px,calc(100% - 60px));
-    min-height:605px;
+    min-height:620px;
 
     margin:0 auto;
-    padding:52px 0 58px;
+    padding:48px 0 70px;
 
     display:grid !important;
-    grid-template-columns:minmax(0,1fr) 560px;
+    grid-template-columns:minmax(0,590px) minmax(420px,540px);
+    justify-content:space-between;
     align-items:center;
-    gap:58px;
+    gap:50px;
+
+    overflow:visible;
 }
 
 .hero-content{
     position:relative;
-    z-index:4;
+    z-index:2;
 
     width:100%;
     max-width:590px;
@@ -244,6 +246,7 @@ a{
 }
 
 .hero-content h1{
+    width:100%;
     max-width:590px;
 
     margin:0 0 24px;
@@ -264,6 +267,7 @@ a{
 }
 
 .hero-content > p{
+    width:100%;
     max-width:590px;
 
     margin:0 0 16px;
@@ -345,27 +349,44 @@ a{
     line-height:1.62;
 }
 
-/* ==================================================
-   06 HERO IMAGE / DESKTOP
-================================================== */
-
 .hero-visual{
     position:relative;
+    z-index:1;
+
     width:100%;
-    max-width:560px;
+    max-width:540px;
+    height:auto;
+
+    margin:0;
+    padding:0;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
+    overflow:visible;
     pointer-events:none;
 }
 
 .hero-visual img{
+    position:relative;
+
     width:100%;
     max-width:540px;
     height:auto;
+    max-height:none;
+
     display:block;
+
+    margin:0;
+    padding:0;
+
     object-fit:contain;
+    object-position:center;
+
+    transform:none;
 }
+
 /* ==================================================
    07 HERO CTA
 ================================================== */
