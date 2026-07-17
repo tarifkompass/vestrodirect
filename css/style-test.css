@@ -1124,6 +1124,7 @@ a{
         max-width:320px;
         height:auto;
         display:block;
+         transform:none;
     }
 
    .portal-sections,
