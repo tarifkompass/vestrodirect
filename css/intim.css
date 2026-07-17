@@ -350,25 +350,19 @@ a{
 ================================================== */
 
 .hero-visual{
-    position:absolute;
-
-    right:-40px;
-    bottom:10px;
-
-    width:520px;
-
+    position:relative;
+    width:100%;
+    max-width:560px;
     display:flex;
-    justify-content:flex-end;
-    align-items:flex-end;
-
+    justify-content:center;
+    align-items:center;
     pointer-events:none;
 }
 
 .hero-visual img{
     width:100%;
-    max-width:520px;
+    max-width:540px;
     height:auto;
-
     display:block;
     object-fit:contain;
 }
