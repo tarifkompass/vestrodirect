@@ -1937,7 +1937,7 @@ a{
     }
 
     .hero::before{
-        height:245px;
+        height:215px;
     }
 
 
@@ -1946,108 +1946,126 @@ a{
     ============================== */
 
     .topbar{
-        width:100%;
+    width:100%;
 
-        padding:20px 16px 12px;
+    padding:14px 18px 12px;
 
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 
-        gap:14px;
-    }
+    gap:8px;
+}
 
-    .header-actions{
-        display:contents;
-    }
+.header-actions{
+    width:100%;
 
-    .logo-link{
-        display:block;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 
-        line-height:0;
+    margin:0;
+}
 
-        text-decoration:none;
-    }
+.logo-link{
+    display:block;
 
-    .logo{
-        width:240px;
-        max-width:88vw;
+    line-height:0;
 
-        height:auto;
+    text-decoration:none;
+}
 
-        margin:0 auto;
+.logo{
+    width:230px;
+    max-width:82vw;
 
-        display:block;
-    }
+    height:auto;
 
+    margin:0 auto 6px;
 
-    /* ==============================
-       MOBILE LANGUAGE
-    ============================== */
-
-    .lang-buttons{
-        margin:0;
-
-        display:flex;
-        justify-content:center;
-        align-items:center;
-
-        gap:14px;
-    }
-
-    .lang-btn{
-        width:90px;
-        height:auto;
-    }
-
-    .lang-control{
-        margin:0;
-    }
-
-    .lang-control + .lang-control{
-        margin-left:0;
-    }
+    display:block;
+}
 
 
-    /* ==============================
-       MOBILE NAVIGATION
-    ============================== */
+/* ==============================
+   MOBILE LANGUAGE
+============================== */
 
-    .main-navigation{
-        width:100%;
+.lang-buttons{
+    margin:0;
 
-        margin:6px 0 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-        display:flex;
-        justify-content:center;
-        align-items:center;
+    gap:8px;
+}
 
-        gap:24px;
+.lang-btn{
+    width:82px;
+    height:auto;
+}
 
-        order:3;
-    }
+.lang-control{
+    margin:0;
+}
 
-    .main-navigation a{
-        color:#c28a18;
+.lang-control + .lang-control{
+    margin-left:-6px;
+}
 
-        font-size:19px;
-        line-height:1.1;
-        letter-spacing:.02em;
-    }
 
-    .main-navigation a:hover{
-        color:#c28a18;
-    }
+/* ==============================
+   MOBILE NAVIGATION
+============================== */
 
-    .back-home{
-        margin:6px 0 0;
+.main-navigation{
+    width:100%;
 
-        font-size:15px;
+    margin:4px 0 0;
 
-        order:3;
-    }
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
+    gap:20px;
+
+    order:initial;
+}
+
+.main-navigation a{
+    color:#c28a18;
+
+    font-size:18px;
+    line-height:1.1;
+    letter-spacing:.02em;
+}
+
+.main-navigation a:hover{
+    color:#c28a18;
+}
+
+.back-home{
+    margin:8px 0 0;
+
+    color:#D4AF37;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:15px;
+    font-weight:600;
+    line-height:1.2;
+
+    text-align:center;
+    text-decoration:none;
+
+    order:initial;
+}
 
     /* ==============================
        MOBILE HERO CONTENT
@@ -2057,7 +2075,7 @@ a{
         width:100%;
         max-width:100%;
 
-        padding:18px 20px 8px;
+        padding:8px 20px 18px;
 
         margin:0 auto;
 
