@@ -364,29 +364,6 @@ a{
     pointer-events:none;
 }
 
-.hero-visual::before{
-    content:"";
-
-    position:absolute;
-    left:50%;
-    top:50%;
-
-    width:520px;
-    height:520px;
-
-    transform:translate(-50%,-50%);
-
-    border-radius:50%;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(232,241,244,.92) 0%,
-            rgba(232,241,244,.48) 54%,
-            rgba(232,241,244,0) 74%
-        );
-}
-
 .hero-visual img{
     width:100%;
     max-width:520px;
