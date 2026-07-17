@@ -1039,7 +1039,7 @@ a{
 }
 
     .lang-btn{
-        width:48px;
+        width:64px;
     }
 
    .lang-control{
@@ -1054,10 +1054,13 @@ a{
         order:3;
     }
 
-    .main-navigation a{
-        font-size:19px;
-    }
-
+.main-navigation a{
+    color:#c28a18;
+    font-size:19px;
+}
+.main-navigation a:hover{
+    color:#c28a18;
+}
    .hero-container{
     width:100%;
     max-width:100%;
