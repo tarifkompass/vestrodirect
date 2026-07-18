@@ -414,7 +414,7 @@ a{
     object-fit:contain;
     object-position:right center;
 
-    transform:none;
+    transform:translateY(24px);
 }
 /* ==================================================
    07 HERO CTA
