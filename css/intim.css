@@ -1201,7 +1201,361 @@ a{
 .orion-button:hover img{
     transform:translateY(-2px) scale(1.03);
 }
+/* ==============================
+   TENGA CARD
+============================== */
 
+.partner-offer-card-tenga{
+    min-height:560px;
+    padding:0;
+    overflow:hidden;
+
+    border:1px solid rgba(196,161,75,.56);
+    border-radius:24px;
+
+    background:
+        radial-gradient(
+            circle at 50% 18%,
+            rgba(255,232,232,.72),
+            transparent 42%
+        ),
+        radial-gradient(
+            circle at 18% 78%,
+            rgba(218,30,40,.08),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 82% 82%,
+            rgba(218,30,40,.07),
+            transparent 28%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #fffafa 52%,
+            #fff3f3 100%
+        );
+
+    box-shadow:
+        0 22px 48px rgba(36,54,73,.14),
+        inset 0 1px 0 rgba(255,255,255,.95);
+
+    transition:.25s ease;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.partner-offer-card-tenga:hover{
+    transform:translateY(-4px);
+
+    border-color:#c49a2c;
+
+    box-shadow:
+        0 28px 58px rgba(36,54,73,.18),
+        0 4px 14px rgba(196,161,75,.12);
+}
+
+.tenga-logo-header{
+    height:96px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(255,255,255,.92),
+            transparent 55%
+        ),
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #fff7f7 100%
+        );
+
+    border-radius:24px 24px 0 0;
+    border-bottom:3px solid #d71920;
+}
+
+.tenga-logo{
+    width:auto;
+    height:auto;
+
+    max-width:150px;
+    max-height:58px;
+
+    object-fit:contain;
+    display:block;
+}
+
+/* ==============================
+   TENGA BODY
+============================== */
+
+.partner-offer-card-tenga .partner-card-body{
+    padding:22px 24px 18px;
+
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.partner-offer-card-tenga .partner-card-text{
+    max-width:460px;
+    margin:0 auto 14px;
+
+    color:#16233b;
+
+    font-size:16px;
+    font-weight:700;
+    line-height:1.55;
+}
+
+.partner-offer-card-tenga .partner-divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin:4px 0 14px;
+}
+
+.partner-offer-card-tenga .partner-divider::before,
+.partner-offer-card-tenga .partner-divider::after{
+    content:"";
+
+    flex:1;
+    height:1px;
+
+    background:rgba(196,161,75,.42);
+}
+
+.partner-offer-card-tenga .partner-divider img{
+    width:22px;
+    height:auto;
+
+    display:block;
+
+    margin:0 10px;
+
+    filter:drop-shadow(
+        0 1px 2px rgba(212,175,55,.25)
+    );
+}
+
+.partner-offer-card-tenga .partner-benefits{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:0;
+
+    list-style:none;
+
+    padding:0;
+    margin:0 0 22px;
+}
+
+.partner-offer-card-tenga .partner-benefits li{
+    position:relative;
+
+    list-style:none;
+
+    padding:42px 8px 0;
+    margin:0;
+
+    color:#050505;
+
+    font-family:"Times New Roman",serif;
+    font-size:13px;
+    font-weight:700;
+    line-height:1.12;
+
+    text-align:center;
+}
+
+.partner-offer-card-tenga .partner-benefits li:not(:last-child){
+    border-right:1px dotted rgba(196,161,75,.45);
+}
+
+.partner-offer-card-tenga .partner-benefits li::before{
+    content:"✓";
+
+    position:absolute;
+    left:50%;
+    top:0;
+
+    transform:translateX(-50%);
+
+    width:32px;
+    height:32px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1.5px solid #c49a2c;
+    border-radius:50%;
+
+    background:#ffffff;
+    color:#b88716;
+
+    font-family:Arial,sans-serif;
+    font-size:18px;
+    font-weight:800;
+}
+
+.partner-offer-card-tenga .partner-trust-line{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:10px;
+    margin:18px 0;
+
+    color:#b88716;
+
+    font-size:14px;
+    font-weight:600;
+}
+
+.partner-offer-card-tenga .partner-trust-line::before,
+.partner-offer-card-tenga .partner-trust-line::after{
+    content:"";
+
+    flex:1;
+
+    border-top:1px dotted rgba(196,161,75,.48);
+}
+
+.partner-offer-card-tenga
+.partner-trust-line span:not(:last-child)::after{
+    content:"·";
+    margin-left:8px;
+}
+
+.partner-offer-card-tenga .partner-links-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:14px;
+    margin:0 0 24px;
+
+    color:#b88716;
+
+    font-family:"Times New Roman",serif;
+    font-size:18px;
+    font-weight:700;
+    line-height:1.2;
+}
+
+.partner-offer-card-tenga .partner-links-title::before,
+.partner-offer-card-tenga .partner-links-title::after{
+    content:"";
+
+    width:86px;
+
+    border-top:1px dotted rgba(196,161,75,.45);
+}
+
+.partner-category-links{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+
+    gap:10px;
+
+    max-width:100%;
+    margin:0 auto;
+}
+
+.partner-category-links a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:7px 10px;
+
+    border:1px solid rgba(196,161,75,.65);
+    border-radius:999px;
+
+    background:#ffffff;
+    color:#050b14;
+
+    font-size:12.5px;
+    font-weight:700;
+    line-height:1.15;
+
+    text-decoration:none;
+    white-space:nowrap;
+
+    transition:.2s ease;
+}
+
+.partner-category-links a:hover{
+    transform:translateY(-2px);
+
+    background:#ffffff;
+    border-color:#c49a2c;
+}
+
+.partner-main-button{
+    display:flex;
+    justify-content:center;
+
+    margin-top:auto;
+    padding:28px 0 26px;
+
+    background:none;
+    border:none;
+    box-shadow:none;
+
+    text-decoration:none;
+}
+
+.partner-main-button::before,
+.partner-main-button::after{
+    content:"";
+
+    width:92px;
+
+    align-self:center;
+
+    border-top:1px dotted rgba(196,161,75,.45);
+
+    margin:0 16px;
+}
+
+.partner-main-button img{
+    width:155px;
+    height:auto;
+
+    display:block;
+
+    background:#ffffff;
+    border-radius:999px;
+
+    transition:.25s ease;
+}
+
+.partner-main-button:hover img{
+    transform:translateY(-2px) scale(1.03);
+}
+
+/* ==============================
+   THIRD CARD CENTERED
+============================== */
+
+.partner-offers-grid
+.partner-offer-card-tenga:nth-child(3){
+    grid-column:1 / -1;
+
+    width:calc((100% - 28px) / 2);
+    justify-self:center;
+}
 /* MOBILE */
 
 @media (max-width:900px){
@@ -2137,7 +2491,34 @@ a{
         display:none;
     }
 
+.partner-offers-grid
+.partner-offer-card-tenga:nth-child(3){
+    grid-column:auto;
 
+    width:100%;
+    justify-self:stretch;
+}
+
+.partner-offer-card-tenga .partner-benefits{
+    grid-template-columns:repeat(2,1fr);
+    row-gap:22px;
+}
+
+.partner-offer-card-tenga
+.partner-benefits li:nth-child(2){
+    border-right:none;
+}
+
+.partner-category-links a{
+    white-space:normal;
+    text-align:center;
+}
+
+.partner-main-button::before,
+.partner-main-button::after{
+    width:48px;
+    margin:0 10px;
+}
     /* ==================================================
        WHY VESTRODIRECT / MOBILE
     ================================================== */
