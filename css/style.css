@@ -950,12 +950,11 @@ a{
         width:560px;
     }
 
-    .portal-grid,
-    .editorial-grid,
-    .principles-grid{
-        grid-template-columns:1fr;
-        max-width:760px;
-    }
+ .editorial-grid,
+.principles-grid{
+    grid-template-columns:1fr;
+    max-width:760px;
+}
 
     .portal-card,
     .editorial-card,
