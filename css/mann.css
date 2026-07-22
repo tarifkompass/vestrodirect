@@ -836,26 +836,37 @@ a{
 ============================== */
 
 .partner-offers-section{
-    padding-top:18px;
-padding-bottom:64px;
-background:#f5eee2;
+    padding-top:0;
+    padding-bottom:64px;
+    background:#f5eee2;
 }
 
 .partner-offers-section .section-heading{
     max-width:860px;
-    margin:0 auto;
+    margin:0 auto 22px;
     text-align:center;
 }
 
 .partner-offers-section .section-badge{
+
     display:block;
-    margin-bottom:18px;
-    color:#b88212;
-    font-size:14px;
+
+    margin:0 auto 8px;
+
+    color:#a87312;
+
+    font-size:18px;
+
     font-weight:700;
+
     line-height:1.2;
-    letter-spacing:.32em;
+
+    letter-spacing:.30em;
+
+    text-align:center;
+
     text-transform:uppercase;
+
 }
 
 .partner-offers-section .section-heading h2{
