@@ -304,11 +304,9 @@ a{
 
     font-family:var(--font-heading);
 
-    font-size:56px;
-
-    font-weight:800;
-
-    line-height:1.08;
+    font-size:40px;
+font-weight:700;
+line-height:1.15;
 
     letter-spacing:-0.03em;
 
@@ -330,7 +328,7 @@ a{
 
     font-weight:500;
 
-    color:var(--gold);
+   color:var(--gold-dark);
 
 }
 /* ==================================================
@@ -1335,7 +1333,7 @@ a{
 
     .hero-quote strong{
 
-    font-size:42px;
+  font-size:30px;
 
     line-height:1.08;
 
