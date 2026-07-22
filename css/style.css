@@ -312,10 +312,11 @@ a{
 .hero-quote span{
     display:block;
     color:#c28a18;
-    font-family:Georgia, "Times New Roman", serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-size:32px;
-    font-weight:500;
+    font-weight:700;
     line-height:1.16;
+    letter-spacing:-.025em;
     text-align:center;
     text-shadow:none;
 }
@@ -347,7 +348,7 @@ a{
         );
 }
 .portal-sections{
-    padding:28px 24px 90px;
+    padding:28px 24px 36px;
     background:#f4eddf;
 }
 .editorial-section{
@@ -355,7 +356,7 @@ a{
 }
 
 .principles-section{
-    padding-top:92px;
+    padding-top:42px;
     padding-bottom:88px;
 }
 
