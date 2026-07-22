@@ -2028,12 +2028,15 @@ a{
         max-width:100%;
     }
 
-   .partner-offers-section .section-badge{
+  .partner-offers-section .section-badge{
     margin:-20px auto 12px;
 
-    font-size:11px;
-    line-height:1.4;
-    letter-spacing:.20em;
+    font-size:15px;
+    font-weight:600;
+    line-height:1.35;
+    letter-spacing:.28em;
+   color:#a87312;
+}
 }
     .partner-offers-section .section-heading h2{
         font-size:38px;
