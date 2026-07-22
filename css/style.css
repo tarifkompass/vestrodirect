@@ -247,7 +247,7 @@ a{
 
 .hero-text{
     width:100%;
-    max-width:760px;
+    max-width:1050px;
     margin:0;
     padding:0;
     transform:none;
@@ -277,7 +277,7 @@ a{
 }
 
 .hero-text p{
-    max-width:690px;
+    max-width:980px;
     margin-bottom:22px;
     color:#344154;
     font-size:21px;
@@ -299,7 +299,7 @@ a{
 }
 
 .hero-quote{
-    max-width:570px;
+    max-width:900px;
 }
 
 .hero-quote span{
