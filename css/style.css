@@ -81,7 +81,7 @@ a{
 
 .hero{
     position:relative;
-    min-height:930px;
+    min-height:560px;
     overflow:hidden;
 
     color:var(--navy-text);
@@ -239,24 +239,18 @@ a{
 
 .hero-container{
     width:100%;
-    max-width:1600px;
+    max-width:1280px;
     margin:0 auto;
-    padding:0 60px 90px;
-    padding-left:72px;
-    display:flex;
-    align-items:flex-start;
-    justify-content:flex-start;
-    gap:80px;
-    position:relative;
+    padding:0 60px 50px;
+    display:block;
 }
 
 .hero-text{
-    width:690px;
-    max-width:690px;
+    width:100%;
+    max-width:760px;
     margin:0;
     padding:0;
-    flex-shrink:0;
-   transform:translateX(-70px);
+    transform:none;
 }
 
 .hero-label{
@@ -319,30 +313,6 @@ a{
 }
 
 /* ==================================================
-   08 HERO IMAGE
-================================================== */
-
-.hero-image{
-    position:absolute;
-   z-index:2;
-    right:-40px;
-    top:140px;
-    width:840px;
-    display:flex;
-    justify-content:flex-end;
-    align-items:flex-start;
-}
-
-.hero-image img{
-    width:100%;
-    max-width:840px;
-    height:auto;
-    display:block;
-    object-fit:contain;
-    transform: translateY(-70px); 
-}
-
-/* ==================================================
    10 MAIN CONTENT
 ================================================== */
 
@@ -377,7 +347,9 @@ a{
             #faf7f1 100%
         );
 }
-
+.portal-sections{
+    padding:30px 24px 90px;
+}
 .editorial-section{
     padding-top:92px;
 }
