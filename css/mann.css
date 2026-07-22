@@ -319,10 +319,10 @@ a{
 .hero-kicker{
     display:block;
 
-    margin-top:32px;
+    margin-top:42px;
     margin-bottom:14px;
 
-    color:#c28a18;
+    color:#a87312;
 
     font-size:18px;
     font-weight:600;
@@ -366,12 +366,12 @@ a{
 .symptoms-intro{
     margin:18px auto 10px !important;
 
-    color:#c28a18 !important;
+    color:#a87312 !important;
 
-    font-size:20px !important;
+    font-size:23px !important;
     font-weight:500 !important;
     font-style:normal !important;
-    line-height:1.4 !important;
+    line-height:1.35 !important;
 
     text-align:center;
 }
@@ -536,7 +536,21 @@ a{
     text-align:center;
 
 }
+.partner-offers-section .section-badge{
+    display:block;
 
+    margin:0 auto 12px;
+
+    color:#a87312;
+
+    font-size:17px;
+    font-weight:700;
+    line-height:1.35;
+    letter-spacing:.32em;
+
+    text-align:center;
+    text-transform:uppercase;
+}
 .section-heading,
 .center-heading{
 
@@ -822,7 +836,7 @@ a{
 ============================== */
 
 .partner-offers-section{
-    padding-top:34px;
+    padding-top:18px;
 padding-bottom:64px;
 background:#f5eee2;
 }
