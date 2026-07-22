@@ -805,9 +805,8 @@ a{
 
 .partner-offers-section{
     padding:52px 24px 64px;
-    background:linear-gradient(180deg,#efe6d8 0%,#faf7f1 100%);
+    background:#f5eee2;
 }
-
 .partner-offers-section .content-container{
     max-width:1180px;
     margin:0 auto;
@@ -823,7 +822,7 @@ a{
     display:block;
     margin-bottom:18px;
     color:#b88212;
-    font-size:14px;
+    font-size:17px;
     font-weight:700;
     line-height:1.2;
     letter-spacing:.32em;
