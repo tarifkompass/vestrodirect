@@ -761,10 +761,8 @@ a{
 
 .principles-note{
     max-width:1040px;
-    margin:40px auto 40px;
-    padding:28px 36px;
-    border-top:1px solid rgba(199,161,75,.34);
-    border-bottom:1px solid rgba(199,161,75,.25);
+    margin:24px auto 0;
+    padding:0 36px;
     text-align:center;
 }
 .principles-note p{
