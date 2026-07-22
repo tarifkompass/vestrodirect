@@ -82,7 +82,7 @@ a{
 
 .hero{
     position:relative;
-    min-height:930px;
+    min-height:770px;
     overflow:hidden;
 
     color:var(--navy-text);
@@ -305,7 +305,7 @@ a{
 
     margin:0 auto;
 
-    padding:0 60px 90px;
+   padding:0 60px 30px;
     padding-left:72px;
 
     display:flex !important;
@@ -332,7 +332,7 @@ a{
 .hero-kicker{
     display:block;
 
-    margin-top:70px;
+    margin-top:48px;
     margin-bottom:18px;
 
     color:#c28a18;
@@ -348,7 +348,7 @@ a{
 .hero-content h1{
     max-width:760px;
 
-    margin-bottom:22px;
+    margin-bottom:14px;
 
     color:var(--navy-text);
 
@@ -363,7 +363,7 @@ a{
 .hero-content p{
     max-width:690px;
 
-    margin-bottom:22px;
+    margin-bottom:16px;
 
     color:#344154;
 
@@ -373,7 +373,7 @@ a{
 }
 
 .symptoms-intro{
-    margin-top:20px;
+    margin-top:8px;
     margin-bottom:12px;
 
     color:#c28a18 !important;
@@ -385,8 +385,8 @@ a{
 }
 
 .hero-topics{
-    margin-top:8px;
-    margin-bottom:12px;
+    margin-top:4px;
+margin-bottom:0;
 
     display:flex;
     flex-direction:column;
@@ -402,7 +402,7 @@ a{
 
     color:#344154;
 
-    font-size:18px;
+    font-size:17px;
     font-weight:600;
     letter-spacing:.02em;
 }
@@ -455,7 +455,7 @@ a{
     z-index:2;
 
     right:-40px;
-    top:140px;
+    top:115px;
 
     width:840px;
 
@@ -473,7 +473,7 @@ a{
 
     object-fit:contain;
 
-    transform:translateY(-70px);
+    transform:translateY(-40px);
 }
 
 
