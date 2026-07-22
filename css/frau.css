@@ -82,19 +82,13 @@ a{
 
 .hero{
     position:relative;
-    min-height:930px;
+    min-height:auto;
     overflow:hidden;
 
     color:var(--navy-text);
 
-    background:
-        linear-gradient(
-            180deg,
-            #f7f2e8 0%,
-            #f2eadc 100%
-        );
+    background:#f5eee2;
 }
-
 .hero::before{
     content:"";
 
@@ -246,108 +240,111 @@ a{
 
 .hero-main{
     width:100%;
-    max-width:1600px;
+    max-width:1440px;
 
     margin:0 auto;
 
-    padding:0 60px 90px;
-    padding-left:72px;
+    padding:0 60px 30px;
 
-    display:flex !important;
-    align-items:flex-start;
-    justify-content:flex-start;
-
-    gap:80px;
+    display:block;
 
     position:relative;
 }
-
 .hero-content{
-    width:690px;
-    max-width:690px;
+    width:100%;
+    max-width:1380px;
 
-    margin:0;
+    margin:0 auto;
     padding:0;
 
-    flex-shrink:0;
+    text-align:center;
 
-    transform:translateX(-70px);
+    transform:none;
 }
 
 .hero-kicker{
     display:block;
 
-    margin-top:70px;
-    margin-bottom:18px;
+    margin-top:42px;
+    margin-bottom:14px;
 
-    color:#c28a18;
+    color:#a87312;
 
     font-size:18px;
     font-weight:600;
     line-height:1.35;
     letter-spacing:.28em;
 
+    text-align:center;
     text-transform:uppercase;
 }
 
 .hero-content h1{
-    max-width:760px;
+    max-width:1380px;
 
-    margin-bottom:22px;
+    margin:0 auto 20px;
 
     color:var(--navy-text);
 
-    font-size:clamp(50px,4.5vw,68px);
-    line-height:1.06;
-    font-weight:600;
+    font-size:clamp(48px,4.2vw,72px);
+    line-height:1.04;
+    font-weight:700;
     letter-spacing:-.035em;
+
+    text-align:center;
 
     text-shadow:none;
 }
 
 .hero-content p{
-    max-width:690px;
+    max-width:1240px;
 
-    margin-bottom:22px;
+    margin:0 auto 14px;
 
     color:#344154;
 
-    font-size:21px;
-    line-height:1.58;
+    font-size:20px;
+    line-height:1.48;
     font-weight:500;
+
+    text-align:center;
 }
 
 .symptoms-intro{
-    margin-top:20px;
-    margin-bottom:12px;
+    margin:18px auto 10px !important;
 
-    color:#c28a18 !important;
+    color:#a87312 !important;
 
-    font-size:19px;
-    font-weight:300;
-    font-style:italic;
-    line-height:1.5;
+    font-size:23px !important;
+    font-weight:500 !important;
+    font-style:normal !important;
+    line-height:1.35 !important;
+
+    text-align:center;
 }
 
 .hero-topics{
-    margin-top:8px;
-    margin-bottom:12px;
+    margin:8px auto 0;
 
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
 
-    gap:7px;
+    gap:12px 34px;
 }
 
 .topic-item{
     display:flex;
     align-items:center;
+    justify-content:center;
 
     gap:8px;
 
     color:#344154;
 
-    font-size:18px;
+    font-size:17px;
     font-weight:600;
     letter-spacing:.02em;
 }
@@ -359,69 +356,9 @@ a{
     display:block;
 }
 
-.hero-message{
-    margin-top:20px;
-
-    max-width:900px;
-}
-
-.message-title{
-    display:block;
-
-    margin:-10px 0 0;
-
-    color:#c28a18 !important;
-
-    font-size:19px;
-    font-weight:300;
-    font-style:italic;
-    line-height:1.5;
-}
-
-.hero-message p{
-    margin:0;
-    padding-top:12px;
-
-    color:#344154;
-
-    font-size:18px;
-    font-weight:400;
-    line-height:1.7;
-}
-
-
 /* ==================================================
    06 HERO IMAGE
 ================================================== */
-
-.hero-visual{
-    position:absolute;
-
-    z-index:2;
-
-    right:-40px;
-    top:140px;
-
-    width:840px;
-
-    display:flex;
-    justify-content:flex-end;
-    align-items:flex-start;
-}
-
-.hero-visual img{
-    width:100%;
-    max-width:840px;
-    height:auto;
-
-    display:block;
-
-    object-fit:contain;
-
-    transform:translateY(-70px);
-}
-
-
 /* ==================================================
    07 HERO CTA
 ================================================== */
@@ -465,26 +402,15 @@ a{
 ================================================== */
 
 .main-content{
-
     position:relative;
     z-index:2;
 
     color:var(--text);
 
-    background:
-        linear-gradient(
-            180deg,
-            #efe6d8 0%,
-            #faf7f1 12%,
-            #fffdf9 55%,
-            #f3ece2 100%
-        );
+    background:#f5eee2;
 
-    box-shadow:
-        0 -18px 40px rgba(4,18,40,.15);
-
+    box-shadow:none;
 }
-
 .light-section{
 
     width:100%;
@@ -530,18 +456,14 @@ a{
 
 .section-heading,
 .center-heading{
-
     max-width:980px;
 
-    margin:0 auto 30px;
+    margin:0 auto 22px;
 
     text-align:center;
-
 }
-
 .section-heading h2,
 .center-heading h2{
-
     max-width:980px;
 
     margin:0 auto;
@@ -553,12 +475,11 @@ a{
         "Times New Roman",
         serif;
 
-   font-size:clamp(32px,3.9vw,49px);
+    font-size:clamp(38px,3.8vw,58px);
 
     font-weight:600;
 
     line-height:1.10;
-
 }
 
 .heading-description{
@@ -813,34 +734,49 @@ a{
 ============================== */
 
 .partner-offers-section{
-    padding:52px 24px 64px;
-    background:linear-gradient(180deg,#efe6d8 0%,#faf7f1 100%);
+    padding:0 24px 64px;
+
+    background:#f5eee2;
 }
 
 .partner-offers-section .section-heading{
     max-width:860px;
-    margin:0 auto;
+
+    margin:0 auto 22px;
+
     text-align:center;
 }
 
 .partner-offers-section .section-badge{
     display:block;
-    margin-bottom:18px;
-    color:#b88212;
-    font-size:14px;
+
+    margin:0 auto 8px;
+
+    color:#a87312;
+
+    font-size:18px;
     font-weight:700;
     line-height:1.2;
-    letter-spacing:.32em;
+    letter-spacing:.30em;
+
+    text-align:center;
     text-transform:uppercase;
 }
-
 .partner-offers-section .section-heading h2{
-    margin:0;
-    color:#071a33;
-    font-family:"Times New Roman",serif;
-    font-size:52px;
-    font-weight:700;
-    line-height:1.05;
+    max-width:980px;
+
+    margin:0 auto;
+
+    color:var(--navy-text);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:clamp(38px,3.8vw,58px);
+    font-weight:600;
+    line-height:1.10;
 }
 
 .partner-offers-section .section-heading p{
