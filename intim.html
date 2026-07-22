@@ -427,7 +427,136 @@ data-en="← Back to Home">
         </div>
 
    </article>
+<!-- ==============================
+     TENGA
+============================== -->
 
+<article class="partner-offer-card partner-offer-card-tenga">
+
+    <div class="partner-logo-header tenga-logo-header">
+
+        <img
+            src="images/0228_TENGA_STORE_EUROPE_rectangle.png"
+            class="partner-logo tenga-logo"
+            alt="TENGA Store Europe"
+        >
+
+    </div>
+
+    <div class="partner-card-body">
+
+        <p class="partner-card-text">
+            Innovative Qualitätsprodukte von TENGA für Männer,
+            Frauen und Paare. Diskret online bestellen und
+            direkt vom europäischen TENGA Store liefern lassen.
+        </p>
+
+        <div class="partner-divider">
+
+            <img
+                src="images/gold-lily-icon.png"
+                alt=""
+                class="partner-divider-icon"
+            >
+
+        </div>
+
+        <ul class="partner-benefits">
+
+            <li>Originalprodukte von TENGA</li>
+
+            <li>Große Auswahl für Männer und Paare</li>
+
+            <li>Diskrete Online-Bestellung</li>
+
+            <li>Versand innerhalb Europas</li>
+
+        </ul>
+
+        <div class="partner-trust-line">
+
+            <span>Original</span>
+
+            <span>Diskret</span>
+
+            <span>Direkt vom Hersteller</span>
+
+        </div>
+
+        <p class="partner-links-title">
+            Direkt zu TENGA
+        </p>
+
+        <div class="partner-category-links">
+
+            <a
+                href="https://tidd.ly/4fQAzOo"
+                target="_blank"
+                rel="sponsored nofollow"
+            >
+                Sexspielzeug für Frauen
+            </a>
+
+            <a
+                href="https://tidd.ly/3T6oUCu"
+                target="_blank"
+                rel="sponsored nofollow"
+            >
+                Sexspielzeug für Männer
+            </a>
+
+            <a
+                href="https://tidd.ly/4whYJaq"
+                target="_blank"
+                rel="sponsored nofollow"
+            >
+                Sexspielzeug für Paare
+            </a>
+
+            <a
+                href="https://tidd.ly/4pJL6lI"
+                target="_blank"
+                rel="sponsored nofollow"
+            >
+                Masturbatoren
+            </a>
+
+            <a
+                href="https://tidd.ly/4bWbdwa"
+                target="_blank"
+                rel="sponsored nofollow"
+            >
+                Lotionen
+            </a>
+
+            <a
+                href="https://tidd.ly/3R9jBlb"
+                target="_blank"
+                rel="sponsored nofollow"
+            >
+                Vibratoren
+            </a>
+
+        </div>
+
+        <a
+            href="https://tidd.ly/4fp4eNq"
+            class="partner-main-button"
+            target="_blank"
+            rel="sponsored nofollow"
+            aria-label="TENGA Store Europe besuchen"
+        >
+
+            <img
+                src="images/discover-button-intim.png"
+                alt="TENGA entdecken"
+            >
+
+        </a>
+
+    </div>
+
+</article>
 </div>
 </div>
 </section>
@@ -882,7 +1011,9 @@ Persönlich. Diskret. Direkt.
 document.addEventListener('DOMContentLoaded', function() {
 
     const partnerLinks = document.querySelectorAll(
-        'article.partner-offer-card-mystim a, article.partner-offer-card-orion a'
+        'article.partner-offer-card-mystim a, ' +
+        'article.partner-offer-card-orion a, ' +
+        'article.partner-offer-card-tenga a'
     );
 
     partnerLinks.forEach(function(link) {
@@ -890,7 +1021,9 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', function() {
 
             const card = link.closest(
-                'article.partner-offer-card-mystim, article.partner-offer-card-orion'
+                'article.partner-offer-card-mystim, ' +
+                'article.partner-offer-card-orion, ' +
+                'article.partner-offer-card-tenga'
             );
 
             let partnerName = 'unknown_partner';
@@ -901,6 +1034,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (card.classList.contains('partner-offer-card-orion')) {
                 partnerName = 'Orion';
+            }
+
+            if (card.classList.contains('partner-offer-card-tenga')) {
+                partnerName = 'Tenga';
             }
 
             if (typeof gtag === 'function') {
